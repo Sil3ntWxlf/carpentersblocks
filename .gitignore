@@ -1,8 +1,25 @@
-# Ignore everything in the root with exceptions.
-/*
-!.gitignore
-!build.gradle
-!LICENSE-carpentersblocks.txt
-!README.md
-!src/
-Thumbs.db
+# eclipse
+bin
+*.launch
+.settings
+.metadata
+.classpath
+.project
+
+# idea
+out
+*.ipr
+*.iws
+*.iml
+.idea
+
+# gradle
+build
+.gradle
+
+# other
+eclipse
+run
+
+# Files from Forge MDK
+forge*changelog.txt
