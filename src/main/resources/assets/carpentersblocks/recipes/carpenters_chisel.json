@@ -3,7 +3,7 @@
   "pattern": [
     "   ",
     " X ",
-  " # "
+    " # "
   ],
   "key": {
     "X": {
@@ -15,6 +15,7 @@
     }
   },
   "result": {
-    "item": "carpentersblocks:carpenters_chisel"
+    "item": "carpentersblocks:carpenters_chisel",
+    "count": 1
   }
 }
