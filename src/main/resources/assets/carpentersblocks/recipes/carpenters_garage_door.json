@@ -1,0 +1,22 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "XX ",
+    "## ",
+    "## "
+  ],
+  "key": {
+    "#": {
+      "type": "forge:ore_dict",
+      "ore": "carpentersblocks:carpenters_block"
+    },
+    "X": {
+      "type": "forge:ore_dict",
+      "ore": "plankWood"
+    }
+  },
+  "result": {
+    "item": "carpentersblocks:carpenters_garage_door",
+    "count": 2
+  }
+}

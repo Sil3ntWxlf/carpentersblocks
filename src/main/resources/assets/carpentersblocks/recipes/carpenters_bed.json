@@ -1,0 +1,21 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "   ",
+    "XXX",
+    "###"
+  ],
+  "key": {
+    "X": {
+      "type": "forge:ore_dict",
+      "ore": "minecraft:wool"
+    },
+    "#": {
+      "item": "carpentersblocks:carpenters_block"
+    }
+  },
+  "result": {
+    "item": "carpentersblocks:carpenters_bed",
+    "count": 1
+  }
+}

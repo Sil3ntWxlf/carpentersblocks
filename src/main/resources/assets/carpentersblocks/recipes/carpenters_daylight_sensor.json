@@ -1,0 +1,25 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    " R ",
+    "XXX",
+    "###"
+  ],
+  "key": {
+    "X": {
+      "type": "forge:ore_dict",
+      "ore": "minecraft:quartz"
+    },
+    "#": {
+      "item": "carpentersblocks:carpenters_block"
+    },
+     "R": {
+       "type": "forge:ore_dict",
+       "ore": "minecraft:redstone_dust"
+     }
+  },
+  "result": {
+    "item": "carpentersblocks:carpenters_daylight_sensor"
+    "count": 2
+  }
+}

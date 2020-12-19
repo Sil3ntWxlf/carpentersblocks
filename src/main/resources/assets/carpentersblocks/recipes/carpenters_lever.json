@@ -1,0 +1,22 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "   ",
+    " # ",
+    " X "
+  ],
+  "key": {
+    "#": {
+      "type": "forge:ore_dict",
+      "ore": "carpentersblocks:carpenters_block"
+    },
+    "X": {
+      "type": "forge:ore_dict",
+      "ore": "minecraft:stone"
+    }
+  },
+  "result": {
+    "item": "carpentersblocks:carpenters_lever",
+    "count": 2
+  }
+}

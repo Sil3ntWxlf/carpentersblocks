@@ -1,0 +1,22 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "###",
+    "#x#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "type": "forge:ore_dict",
+      "ore": "carpentersblocks:carpenters_block"
+    },
+    "X": {
+      "type": "forge:ore_dict",
+      "ore": "minecraft:leather"
+    }
+  },
+  "result": {
+    "item": "carpentersblocks:carpenters_item_frame",
+    "count": 9
+  }
+}

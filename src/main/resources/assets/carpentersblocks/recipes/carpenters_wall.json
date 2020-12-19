@@ -1,0 +1,17 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "   ",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "type": "forge:ore_dict",
+      "ore": "carpentersblocks:carpenters_block"
+  },
+  "result": {
+    "item": "carpentersblocks:carpenters_wall",
+    "count": 3
+  }
+}
