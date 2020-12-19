@@ -21,7 +21,7 @@ version="${file.jarVersion}" #mandatory
  # A display name for the mod
 displayName="CarpentersBlocksReborn" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification <here>
-updateJSONURL="https://github.com/Sil3ntWxlf/carpentersblocksreborn/releases/" #optional
+updateJSONURL="https://github.com/Sil3ntWxlf/carpentersblocksreborn/releases/latest/" #optional
 # A URL for the "homepage" for this mod, displayed in the mod UI
 displayURL="https://github.com/Sil3ntWxlf/carpentersblocksreborn" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
@@ -45,7 +45,7 @@ With Carpenter's Blocks, building takes on new possibilities!
     # Does this dependency have to exist - if not, ordering below must be specified
     mandatory=true #mandatory
     # The version range of the dependency
-    versionRange="[1.16.3)" #mandatory
+    versionRange="[1.16.4)" #mandatory
     # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
     ordering="NONE"
     # Side this dependency is applied on - BOTH, CLIENT or SERVER
@@ -54,6 +54,6 @@ With Carpenter's Blocks, building takes on new possibilities!
 [[dependencies.carpentersblocks]]
     modId="chisel"
     mandatory=true
-    versionRange="[1.16.3]"
+    versionRange="[1.16.4]"
     ordering="BEFORE"
     side="BOTH"

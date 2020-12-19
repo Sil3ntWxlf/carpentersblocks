@@ -81,13 +81,13 @@ public class CarpentersBlocksReborn
         @SubscribeEvent
         public static void onItemsRegistry(final RegistryEvent.Register<Item> blockRegistryEvent) {
             // register a new item here
-            LOGGER.info("HELLO from Register Block");
+            LOGGER.info("HELLO from Item Registry");
         }
 
         @SubscribeEvent
         public static void onTilesRegistry(final RegistryEvent.Register<TileEntityType<?>> blockRegistryEvent) {
             // register a new tile entity type here
-            LOGGER.info("HELLO from Register Block");
+            LOGGER.info("HELLO from Tiles Registry");
         }
     }
 }
