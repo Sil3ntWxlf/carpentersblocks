@@ -33,17 +33,18 @@ tile.blockCarpentersSlope.wedgeprism.name=Carpenter's Prism Slope
 tile.blockCarpentersStair.name=Carpenter's Stair
 tile.blockCarpentersStaircase.name=Carpenter's Staircase
 tile.blockCarpentersTorch.name=Carpenter's Torch
+tile.blockCarpentersWall.name=Carpenter's Wall
 tile.blockCarpentersWindow.name=Carpenter's Window
 
 
 # CREATIVE TAB
-itemGroup.carpentersBlocks.name=Carpenter's Blocks Reborn
+itemGroup.carpentersBlocks.name=Carpenter'sBlocks Reborn
 
 # ENTITIES
 entity.CarpentersTile.name=Carpenter's Tile
 
 # ITEMS
-item.blockCarpentersBarrier.name=Carpenter's Barrier
+item.blockCarpentersWall.name=Carpenter's Wall
 item.blockCarpentersBed.name=Carpenter's Bed
 item.blockCarpentersBlock.name=Carpenter's Block
 item.blockCarpentersBlock.Slab.name=Carpenter's Slab
