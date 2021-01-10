@@ -1,0 +1,109 @@
+[10Jan2021 00:07:30.901] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmluserdevclient, --fml.mcpVersion, 20201102.104115, --fml.mcVersion, 1.16.4, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 35.1.36, --version, MOD_DEV, --assetIndex, 1.16, --assetsDir, C:\Users\jonat\.gradle\caches\forge_gradle\assets, --username, Dev, --accessToken, ❄❄❄❄❄❄❄❄, --userProperties, {}]
+[10Jan2021 00:07:30.904] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 8.0.6+85+master.325de55 starting: java version 1.8.0_275 by Amazon.com Inc.
+[10Jan2021 00:07:31.585] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[10Jan2021 00:07:31.625] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.2 Source=file:/C:/Users/jonat/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.2/1cf212283d26f706fd3074318870bebd14d2a9ed/mixin-0.8.2.jar Service=ModLauncher Env=CLIENT
+[10Jan2021 00:07:32.692] [main/INFO] [mixin/]: Successfully loaded Mixin Connector [vazkii.patchouli.common.MixinConnector]
+[10Jan2021 00:07:32.708] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmluserdevclient' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\jonat\.gradle\caches\forge_gradle\assets, --assetIndex, 1.16, --username, Dev, --accessToken, ❄❄❄❄❄❄❄❄, --userProperties, {}]
+[10Jan2021 00:07:37.697] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[10Jan2021 00:07:38.365] [Render thread/ERROR] [net.minecraft.client.Minecraft/]: Failed to verify authentication
+com.mojang.authlib.exceptions.AuthenticationException: Unauthorized
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:119) ~[authlib-2.1.28.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilSocialInteractionsService.checkPrivileges(YggdrasilSocialInteractionsService.java:94) ~[authlib-2.1.28.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilSocialInteractionsService.<init>(YggdrasilSocialInteractionsService.java:40) ~[authlib-2.1.28.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.createSocialInteractionsService(YggdrasilAuthenticationService.java:152) ~[authlib-2.1.28.jar:?]
+	at net.minecraft.client.Minecraft.func_244735_a(Minecraft.java:556) ~[forge-1.16.4-35.1.36_mapped_snapshot_20201028-1.16.3-recomp.jar:?]
+	at net.minecraft.client.Minecraft.<init>(Minecraft.java:388) ~[forge-1.16.4-35.1.36_mapped_snapshot_20201028-1.16.3-recomp.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:149) ~[forge-1.16.4-35.1.36_mapped_snapshot_20201028-1.16.3-recomp.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_275]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_275]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_275]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_275]
+	at net.minecraftforge.userdev.FMLUserdevClientLaunchProvider.lambda$launchService$0(FMLUserdevClientLaunchProvider.java:52) ~[forge-1.16.4-35.1.36_mapped_snapshot_20201028-1.16.3-recomp.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-8.0.6.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-8.0.6.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-8.0.6.jar:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.0.6.jar:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.0.6.jar:?]
+	at net.minecraftforge.userdev.LaunchTesting.main(LaunchTesting.java:105) [forge-1.16.4-35.1.36_mapped_snapshot_20201028-1.16.3-recomp.jar:?]
+[10Jan2021 00:07:38.373] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[10Jan2021 00:07:38.593] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.2.2 build 10
+[10Jan2021 00:07:39.921] [modloading-worker-11/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 35.1.36, for MC 1.16.4 with MCP 20201102.104115
+[10Jan2021 00:07:39.921] [modloading-worker-11/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v35.1.36 Initialized
+[10Jan2021 00:07:40.324] [Render thread/INFO] [carpentersblocksreborn.CarpentersBlocksReborn/]: HELLO from Item Registry
+[10Jan2021 00:07:40.345] [Render thread/INFO] [patchouli/]: Loaded book jsons on Thread[Render thread,5,main] in 18 ms
+[10Jan2021 00:07:40.405] [Render thread/INFO] [carpentersblocksreborn.CarpentersBlocksReborn/]: HELLO from Tiles Registry
+[10Jan2021 00:07:40.415] [Render thread/ERROR] [net.minecraft.util.Util/]: No data fixer registered for geoexampleentity
+[10Jan2021 00:07:40.415] [Render thread/ERROR] [net.minecraft.util.Util/]: No data fixer registered for bikeentity
+[10Jan2021 00:07:41.406] [Render thread/INFO] [com.mojang.text2speech.NarratorWindows/]: Narrator library for x64 successfully loaded
+[10Jan2021 00:07:41.470] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, Mod Resources
+[10Jan2021 00:07:41.560] [Worker-Main-8/INFO] [carpentersblocksreborn.CarpentersBlocksReborn/]: HELLO FROM PREINIT
+[10Jan2021 00:07:41.560] [Worker-Main-8/INFO] [carpentersblocksreborn.CarpentersBlocksReborn/]: DIRT BLOCK >> minecraft:dirt
+[10Jan2021 00:07:41.661] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [carpentersblocksreborn] Starting version check at https://github.com/Sil3ntWxlf/carpentersblocksreborn/releases/latest/
+[10Jan2021 00:07:42.369] [Worker-Main-11/INFO] [carpentersblocksreborn.CarpentersBlocksReborn/]: Got game settings net.minecraft.client.GameSettings@3598a461
+[10Jan2021 00:07:42.906] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 7 column 1 path $
+	at com.google.gson.Gson.fromJson(Gson.java:899) ~[gson-2.8.0.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:852) ~[gson-2.8.0.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:801) ~[gson-2.8.0.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:773) ~[gson-2.8.0.jar:?]
+	at net.minecraftforge.fml.VersionChecker$1.process(VersionChecker.java:195) ~[forge:?]
+	at java.lang.Iterable.forEach(Iterable.java:75) [?:1.8.0_275]
+	at net.minecraftforge.fml.VersionChecker$1.run(VersionChecker.java:139) [forge:?]
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 7 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385) ~[gson-2.8.0.jar:?]
+	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:183) ~[gson-2.8.0.jar:?]
+	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:145) ~[gson-2.8.0.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[gson-2.8.0.jar:?]
+	... 6 more
+[10Jan2021 00:07:42.907] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[10Jan2021 00:07:43.366] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: AHEAD Current: 35.1.36 Target: null
+[10Jan2021 00:07:44.617] [Worker-Main-9/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Exception loading blockstate definition: carpentersblocksreborn:blockstates/carpenters_block.json: java.io.FileNotFoundException: carpentersblocksreborn:blockstates/carpenters_block.json
+[10Jan2021 00:07:44.619] [Worker-Main-9/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Exception loading blockstate definition: 'carpentersblocksreborn:blockstates/carpenters_block.json' missing model for variant: 'carpentersblocksreborn:carpenters_block#'
+[10Jan2021 00:07:46.354] [modloading-worker-9/ERROR] [net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes/]: Entity geckolib3:geoexampleentity has no attributes
+[10Jan2021 00:07:46.354] [modloading-worker-9/ERROR] [net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes/]: Entity geckolib3:bikeentity has no attributes
+[10Jan2021 00:07:46.354] [modloading-worker-9/ERROR] [net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes/]: Entity geckolib3:geoexampleentity has no attributes
+[10Jan2021 00:07:46.354] [modloading-worker-9/ERROR] [net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes/]: Entity geckolib3:bikeentity has no attributes
+[10Jan2021 00:07:46.354] [modloading-worker-9/ERROR] [net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes/]: Entity geckolib3:geoexampleentity has no attributes
+[10Jan2021 00:07:46.354] [modloading-worker-9/ERROR] [net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes/]: Entity geckolib3:bikeentity has no attributes
+[10Jan2021 00:07:46.355] [modloading-worker-9/ERROR] [net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes/]: Entity geckolib3:geoexampleentity has no attributes
+[10Jan2021 00:07:46.355] [modloading-worker-9/ERROR] [net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes/]: Entity geckolib3:bikeentity has no attributes
+[10Jan2021 00:07:46.355] [modloading-worker-9/ERROR] [net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes/]: Entity geckolib3:geoexampleentity has no attributes
+[10Jan2021 00:07:46.355] [modloading-worker-9/ERROR] [net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes/]: Entity geckolib3:bikeentity has no attributes
+[10Jan2021 00:07:46.355] [modloading-worker-9/ERROR] [net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes/]: Entity geckolib3:geoexampleentity has no attributes
+[10Jan2021 00:07:46.355] [modloading-worker-9/ERROR] [net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes/]: Entity geckolib3:bikeentity has no attributes
+[10Jan2021 00:07:46.355] [modloading-worker-9/ERROR] [net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes/]: Entity geckolib3:geoexampleentity has no attributes
+[10Jan2021 00:07:46.355] [modloading-worker-9/ERROR] [net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes/]: Entity geckolib3:bikeentity has no attributes
+[10Jan2021 00:07:46.355] [modloading-worker-9/ERROR] [net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes/]: Entity geckolib3:geoexampleentity has no attributes
+[10Jan2021 00:07:46.355] [modloading-worker-9/ERROR] [net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes/]: Entity geckolib3:bikeentity has no attributes
+[10Jan2021 00:07:46.355] [modloading-worker-9/ERROR] [net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes/]: Entity geckolib3:geoexampleentity has no attributes
+[10Jan2021 00:07:46.355] [modloading-worker-9/ERROR] [net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes/]: Entity geckolib3:bikeentity has no attributes
+[10Jan2021 00:07:46.355] [modloading-worker-9/ERROR] [net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes/]: Entity geckolib3:geoexampleentity has no attributes
+[10Jan2021 00:07:46.355] [modloading-worker-9/ERROR] [net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes/]: Entity geckolib3:bikeentity has no attributes
+[10Jan2021 00:07:46.355] [modloading-worker-9/ERROR] [net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes/]: Entity geckolib3:geoexampleentity has no attributes
+[10Jan2021 00:07:46.356] [modloading-worker-9/ERROR] [net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes/]: Entity geckolib3:bikeentity has no attributes
+[10Jan2021 00:07:46.356] [modloading-worker-9/ERROR] [net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes/]: Entity geckolib3:geoexampleentity has no attributes
+[10Jan2021 00:07:46.356] [modloading-worker-9/ERROR] [net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes/]: Entity geckolib3:bikeentity has no attributes
+[10Jan2021 00:07:46.356] [modloading-worker-9/ERROR] [net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes/]: Entity geckolib3:geoexampleentity has no attributes
+[10Jan2021 00:07:46.356] [modloading-worker-9/ERROR] [net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes/]: Entity geckolib3:bikeentity has no attributes
+[10Jan2021 00:07:46.356] [modloading-worker-9/ERROR] [net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes/]: Entity geckolib3:geoexampleentity has no attributes
+[10Jan2021 00:07:46.356] [modloading-worker-9/ERROR] [net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes/]: Entity geckolib3:bikeentity has no attributes
+[10Jan2021 00:07:46.356] [modloading-worker-9/ERROR] [net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes/]: Entity geckolib3:geoexampleentity has no attributes
+[10Jan2021 00:07:46.356] [modloading-worker-9/ERROR] [net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes/]: Entity geckolib3:bikeentity has no attributes
+[10Jan2021 00:07:46.356] [modloading-worker-9/ERROR] [net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes/]: Entity geckolib3:geoexampleentity has no attributes
+[10Jan2021 00:07:46.356] [modloading-worker-9/ERROR] [net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes/]: Entity geckolib3:bikeentity has no attributes
+[10Jan2021 00:07:46.356] [modloading-worker-9/ERROR] [net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes/]: Entity geckolib3:geoexampleentity has no attributes
+[10Jan2021 00:07:46.356] [modloading-worker-9/ERROR] [net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes/]: Entity geckolib3:bikeentity has no attributes
+[10Jan2021 00:07:47.348] [Render thread/INFO] [net.minecraft.client.audio.SoundSystem/]: OpenAL initialized.
+[10Jan2021 00:07:47.349] [Render thread/INFO] [net.minecraft.client.audio.SoundEngine/SOUNDS]: Sound engine started
+[10Jan2021 00:07:47.722] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x128x0 jei:textures/atlas/gui.png-atlas
+[10Jan2021 00:07:47.724] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[10Jan2021 00:07:47.789] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
+[10Jan2021 00:07:47.789] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[10Jan2021 00:07:47.791] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[10Jan2021 00:07:47.793] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[10Jan2021 00:07:47.794] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[10Jan2021 00:07:47.795] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[10Jan2021 00:07:48.294] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[10Jan2021 00:07:48.299] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[10Jan2021 00:07:48.300] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[10Jan2021 00:07:48.841] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
