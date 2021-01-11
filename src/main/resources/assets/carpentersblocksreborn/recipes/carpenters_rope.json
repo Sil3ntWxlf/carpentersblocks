@@ -1,0 +1,22 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    " X#",
+    "X#X",
+    "#X "
+  ],
+  "key": {
+    "#": {
+      "type": "forge:ore_dict",
+      "ore": "carpentersblocksreborn:carpenters_block"
+    },
+    "X": {
+      "type": "forge:ore_dict",
+      "ore": "minecraft:string"
+    }
+  },
+  "result": {
+    "item": "carpentersblocksreborn:carpenters_rope",
+    "count": 6
+  }
+}

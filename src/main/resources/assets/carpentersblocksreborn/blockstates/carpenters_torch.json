@@ -1,0 +1,14 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "all": "carpentersblocksreborn:blocks/general/uncovered_full_frame"
+    },
+    "model": "carpentersblocksreborn:block/carpenters_torch"
+  },
+  "variants": {
+    "activated=true": [
+      { "model": "carpentersblocksreborn:block/carpenters_torch_activated" }
+    ]
+  }
+}

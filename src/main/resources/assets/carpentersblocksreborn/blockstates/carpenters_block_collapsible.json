@@ -1,0 +1,10 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "normal": { "model": "carpentersblocksreborn:block/carpenters_block_collapsible" },
+	"inventory": { "model": "carpentersblocksreborn:block/carpenters_block_collapsible" }
+  }
+}
