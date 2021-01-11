@@ -19,7 +19,7 @@ modId="carpentersblocksreborn" #mandatory
 # The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
 version="${file.jarVersion}" #mandatory
  # A display name for the mod
-displayName="CarpentersBlocksReborn" #mandatory
+displayName="Carpenter's Blocks Reborn" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification <here>
 updateJSONURL="https://github.com/Sil3ntWxlf/carpentersblocksreborn/releases/latest/" #optional
 # A URL for the "homepage" for this mod, displayed in the mod UI

@@ -4,6 +4,7 @@ import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.material.Material;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.util.ResourceLocation;
@@ -70,16 +71,111 @@ public class CarpentersBlocksReborn
         @SubscribeEvent
         public static void onBlocksRegistry(RegistryEvent.Register<Block> blockRegistryEvent) {
             IForgeRegistry<Block> blocks = blockRegistryEvent.getRegistry();
-
-            helloBlock = new Block(AbstractBlock.Properties.create(Material.ROCK));
+            helloBlock = new Block(AbstractBlock.Properties.create(Material.WOOD));
+            helloBlock.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_barrier"));
+            blocks.register(helloBlock);
+            helloBlock = new Block(AbstractBlock.Properties.create(Material.WOOD));
             helloBlock.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_block"));
             blocks.register(helloBlock);
+            helloBlock = new Block(AbstractBlock.Properties.create(Material.WOOD));
+            helloBlock.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_block_collapsible"));
+            blocks.register(helloBlock);
+            helloBlock = new Block(AbstractBlock.Properties.create(Material.WOOD));
+            helloBlock.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_slab"));
+            blocks.register(helloBlock);
+            helloBlock = new Block(AbstractBlock.Properties.create(Material.WOOD));
+            helloBlock.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_slab_vertical"));
+            blocks.register(helloBlock);
+            helloBlock = new Block(AbstractBlock.Properties.create(Material.WOOD));
+            helloBlock.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_daylight_sensor"));
+            blocks.register(helloBlock);
+            helloBlock = new Block(AbstractBlock.Properties.create(Material.WOOD));
+            helloBlock.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_door"));
+            blocks.register(helloBlock);
+            helloBlock = new Block(AbstractBlock.Properties.create(Material.WOOD));
+            helloBlock.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_garage_door"));
+            blocks.register(helloBlock);
+            helloBlock = new Block(AbstractBlock.Properties.create(Material.WOOD));
+            helloBlock.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_gate"));
+            blocks.register(helloBlock);
+            helloBlock = new Block(AbstractBlock.Properties.create(Material.WOOD));
+            helloBlock.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_hatch"));
+            blocks.register(helloBlock);
+            helloBlock = new Block(AbstractBlock.Properties.create(Material.WOOD));
+            helloBlock.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_ladder"));
+            blocks.register(helloBlock);
+            helloBlock = new Block(AbstractBlock.Properties.create(Material.WOOD));
+            helloBlock.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_lantern"));
+            blocks.register(helloBlock);
+            helloBlock = new Block(AbstractBlock.Properties.create(Material.WOOD));
+            helloBlock.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_scaffolding"));
+            blocks.register(helloBlock);
+            helloBlock = new Block(AbstractBlock.Properties.create(Material.WOOD));
+            helloBlock.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_block_slope"));
+            blocks.register(helloBlock);
+            helloBlock = new Block(AbstractBlock.Properties.create(Material.WOOD));
+            helloBlock.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_block_slope_oblique_exterior"));
+            blocks.register(helloBlock);
+            helloBlock = new Block(AbstractBlock.Properties.create(Material.WOOD));
+            helloBlock.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_block_oblique_interior"));
+            blocks.register(helloBlock);
+            helloBlock = new Block(AbstractBlock.Properties.create(Material.WOOD));
+            helloBlock.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_slope_prism"));
+            blocks.register(helloBlock);
+            helloBlock = new Block(AbstractBlock.Properties.create(Material.WOOD));
+            helloBlock.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_slope_wedge"));
+            blocks.register(helloBlock);
+            helloBlock = new Block(AbstractBlock.Properties.create(Material.WOOD));
+            helloBlock.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_slope_wedge_prism"));
+            blocks.register(helloBlock);
+            helloBlock = new Block(AbstractBlock.Properties.create(Material.WOOD));
+            helloBlock.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_stairs"));
+            blocks.register(helloBlock);
+            helloBlock = new Block(AbstractBlock.Properties.create(Material.WOOD));
+            helloBlock.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_staircase"));
+            blocks.register(helloBlock);
+
         }
 
         @SubscribeEvent
-        public static void onItemsRegistry(final RegistryEvent.Register<Item> blockRegistryEvent) {
+        public static void onItemsRegistry(final RegistryEvent.Register<Item> itemRegistryEvent) {
             // register a new item here
             LOGGER.info("HELLO from Item Registry");
+            IForgeRegistry<Item> items = itemRegistryEvent.getRegistry();
+            items.register(new BlockItem(helloBlock, new Item.Properties()).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_chisel")));
+            items.register(new BlockItem(helloBlock, new Item.Properties()).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_barrier")));
+            items.register(new BlockItem(helloBlock, new Item.Properties()).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_bed")));
+            items.register(new BlockItem(helloBlock, new Item.Properties()).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_block")));
+            items.register(new BlockItem(helloBlock, new Item.Properties()).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_block_collapsible")));
+            items.register(new BlockItem(helloBlock, new Item.Properties()).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_slab")));
+            items.register(new BlockItem(helloBlock, new Item.Properties()).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_slab_vertical")));
+            items.register(new BlockItem(helloBlock, new Item.Properties()).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_boat")));
+            items.register(new BlockItem(helloBlock, new Item.Properties()).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_button")));
+            items.register(new BlockItem(helloBlock, new Item.Properties()).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_daylight_sensor")));
+            items.register(new BlockItem(helloBlock, new Item.Properties()).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_door")));
+            items.register(new BlockItem(helloBlock, new Item.Properties()).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_flowerpot")));
+            items.register(new BlockItem(helloBlock, new Item.Properties()).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_garage_door")));
+            items.register(new BlockItem(helloBlock, new Item.Properties()).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_gate")));
+            items.register(new BlockItem(helloBlock, new Item.Properties()).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_hammer")));
+            items.register(new BlockItem(helloBlock, new Item.Properties()).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_hatch")));
+            items.register(new BlockItem(helloBlock, new Item.Properties()).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_item_frame")));
+            items.register(new BlockItem(helloBlock, new Item.Properties()).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_ladder")));
+            items.register(new BlockItem(helloBlock, new Item.Properties()).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_lantern")));
+            items.register(new BlockItem(helloBlock, new Item.Properties()).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_lever")));
+            items.register(new BlockItem(helloBlock, new Item.Properties()).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_minecart")));
+            items.register(new BlockItem(helloBlock, new Item.Properties()).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_pressure_plate")));
+            items.register(new BlockItem(helloBlock, new Item.Properties()).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_rope")));
+            items.register(new BlockItem(helloBlock, new Item.Properties()).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_safe")));
+            items.register(new BlockItem(helloBlock, new Item.Properties()).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_scaffolding")));
+            items.register(new BlockItem(helloBlock, new Item.Properties()).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_slope")));
+            items.register(new BlockItem(helloBlock, new Item.Properties()).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_slope_oblique_exterior")));
+            items.register(new BlockItem(helloBlock, new Item.Properties()).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_slope_oblique_interior")));
+            items.register(new BlockItem(helloBlock, new Item.Properties()).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_slope_prism")));
+            items.register(new BlockItem(helloBlock, new Item.Properties()).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_slope_wedge")));
+            items.register(new BlockItem(helloBlock, new Item.Properties()).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_slope_wedge_prism")));
+            items.register(new BlockItem(helloBlock, new Item.Properties()).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_stairs")));
+            items.register(new BlockItem(helloBlock, new Item.Properties()).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_staircase")));
+            items.register(new BlockItem(helloBlock, new Item.Properties()).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_torch")));
         }
 
         @SubscribeEvent
