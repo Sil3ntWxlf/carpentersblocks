@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:iron_ingot"
+    },
+    "#": {
+      "item": "carpentersblocksreborn:carpenters_block"
+    }
+  },
+  "result": {
+    "item": "carpentersblocksreborn:carpenters_minecart",
+    "count": 1
+  }
+}

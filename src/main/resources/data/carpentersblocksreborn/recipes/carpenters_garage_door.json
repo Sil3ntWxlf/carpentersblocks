@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_door",
+  "pattern": [
+    "XX",
+    "##",
+    "##"
+  ],
+  "key": {
+    "X": {
+      "tag": "minecraft:planks"
+    },
+    "#": {
+      "item": "carpentersblocksreborn:carpenters_block"
+    }
+  },
+  "result": {
+    "item": "carpentersblocksreborn:carpenters_garage_door",
+    "count": 2
+  }
+}

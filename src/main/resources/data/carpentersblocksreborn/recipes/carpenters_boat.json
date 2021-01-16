@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "boat",
+  "pattern": [
+    "# #",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "carpentersblocksreborn:carpenters_block"
+    }
+  },
+  "result": {
+    "item": "carpentersblocksreborn:carpenters_boat",
+    "count": 1
+  }
+}

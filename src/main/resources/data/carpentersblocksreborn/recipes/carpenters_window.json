@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_door",
+  "pattern": [
+    "#X#",
+    "#X#",
+    "#X#"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:glass"
+    },
+    "#": {
+      "item": "carpentersblocksreborn:carpenters_block"
+    }
+  },
+  "result": {
+    "item": "carpentersblocksreborn:carpenters_window",
+    "count": 2
+  }
+}
