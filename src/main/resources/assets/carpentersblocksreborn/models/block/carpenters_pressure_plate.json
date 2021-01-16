@@ -1,7 +1,7 @@
 {
     "parent": "block/thin_block",
     "textures": {
-        "all": "carpentersblocksreborn:blocks/general/uncovered_full_frame"
+        "all": "carpentersblocksreborn:block/general/full_frame"
     },
     "elements": [
         {   "from": [ 1, 0, 1 ],

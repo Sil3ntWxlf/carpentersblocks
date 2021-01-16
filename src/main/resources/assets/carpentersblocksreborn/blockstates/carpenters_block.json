@@ -1,5 +1,5 @@
 {
     "variants": {
-        "normal": { "model": "carpentersblocksreborn:carpenters_block"}
+        "": { "model": "carpentersblocksreborn:block/carpenters_block"}
     }
 }

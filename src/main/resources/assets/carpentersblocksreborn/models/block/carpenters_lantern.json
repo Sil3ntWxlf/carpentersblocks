@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "carpentersblocksreborn:block/carpenters_general/quartered_frame"
+  }
+}

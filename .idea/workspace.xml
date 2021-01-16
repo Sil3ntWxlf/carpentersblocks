@@ -22,160 +22,345 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c4be78c-33ae-4694-be70-657388551fff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/config/jei/ingredient-list-mod-sort-order.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/config/jei/ingredient-list-type-sort-order.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/config/jei/recipe-category-sort-order.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2021-01-10_01.14.13-fml.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2021-01-10-10.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2021-01-10-11.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2021-01-10-12.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2021-01-10-13.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2021-01-10-14.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2021-01-10-15.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2021-01-10-16.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2021-01-10-17.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2021-01-10-18.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2021-01-10-19.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2021-01-10-3.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2021-01-10-4.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2021-01-10-5.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2021-01-10-6.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2021-01-10-7.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2021-01-10-8.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2021-01-10-9.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/CBR/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/CBR/playerdata/380df991-f603-344c-a090-369bad2a924a.dat_old" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/saves/CBR/poi/r.0.-1.mca" afterDir="false" />
+    <list default="true" id="2c4be78c-33ae-4694-be70-657388551fff" name="Default Changelist" comment="Added blocks, items, entities and redid the en_US.json file to be properly formatted. Testing and debugging currently.">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/carpentersblocksreborn/CarpentersBlocksReborn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/carpentersblocksreborn/Recipes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/carpentersblocksreborn/block/BarrierCarpentersBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/carpentersblocksreborn/block/WaterloggableCarpentersBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/bamboo_slabs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/bamboo_slabs_vertical.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/carpenters_barrier.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/carpenters_bed.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/carpenters_boat.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/carpenters_button.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/carpenters_daylight_sensor.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/carpenters_door.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/carpenters_flowerpot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/carpenters_garage_door.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/carpenters_gate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/carpenters_hatch.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/carpenters_item_frame.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/carpenters_ladder.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/carpenters_lantern.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/carpenters_lever.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/carpenters_minecart.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/carpenters_rope.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/carpenters_safe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/carpenters_scaffolding.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/carpenters_slabs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/carpenters_slabs_vertical.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/carpenters_slope_oblique_exterior.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/carpenters_slope_oblique_interior.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/carpenters_slope_prism.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/carpenters_slope_wedge.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/carpenters_slope_wedge_prism.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/carpenters_staircase.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/carpenters_stairs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/carpenters_wall.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/carpenters_window.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/bamboo_planks.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/bamboo_slabs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/bamboo_slabs_vertical.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_barrier_inventory.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_barrier_post.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_barrier_side.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_slabs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_slabs_vertical.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_slope_prism.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/item/bamboo_planks.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/item/bamboo_slabs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/item/bamboo_slabs_vertical.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/item/carpenters_barrier.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/item/carpenters_bed.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/item/carpenters_boat.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/item/carpenters_button.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/item/carpenters_daylight_sensor.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/item/carpenters_door.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/item/carpenters_flowerpot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/item/carpenters_garage_door.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/item/carpenters_gate.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/item/carpenters_hatch.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/item/carpenters_item_frame.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/item/carpenters_ladder.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/item/carpenters_lantern.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/item/carpenters_lever.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/item/carpenters_minecart.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/item/carpenters_rope.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/item/carpenters_safe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/item/carpenters_scaffolding.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/item/carpenters_slabs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/item/carpenters_slabs_vertical.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/item/carpenters_slope.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/item/carpenters_slope_oblique_exterior.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/item/carpenters_slope_oblique_interior.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/item/carpenters_slope_prism.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/item/carpenters_slope_wedge.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/item/carpenters_slope_wedge_prism.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/item/carpenters_staircase.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/item/carpenters_stairs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/item/carpenters_wall.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/item/carpenters_window.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/carpentersblocksreborn/recipes/bamboo_slabs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/carpentersblocksreborn/recipes/bamboo_slabs_vertical.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/carpentersblocksreborn/recipes/carpenters_barrier.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/.mixin.out/audit/mixin_implementation_report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/.mixin.out/audit/mixin_implementation_report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2021-01-10-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2021-01-10-1.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2021-01-10-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/debug-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-4.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/debug-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-5.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/options.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/options.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/CBR/DIM-1/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/CBR/DIM-1/data/raids.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/CBR/DIM1/data/raids_end.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/CBR/DIM1/data/raids_end.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/CBR/advancements/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/CBR/advancements/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/CBR/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/CBR/data/raids.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/CBR/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/CBR/level.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/CBR/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/CBR/level.dat_old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/CBR/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/CBR/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/CBR/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/CBR/region/r.-1.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/CBR/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/CBR/region/r.0.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/CBR/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/CBR/region/r.0.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/CBR/region/r.1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/CBR/region/r.1.-1.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/CBR/serverconfig/forge-server.toml" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/CBR/serverconfig/forge-server.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/CBR/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/CBR/session.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/CBR/stats/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/CBR/stats/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carpentersblocksreborn/CarpentersBlocksReborn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carpentersblocksreborn/CarpentersBlocksReborn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/audit/mixin_implementation_report.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/.mixin.out/audit/mixin_implementation_report.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/config/fml.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/config/forge-client.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/config/forge-common.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/config/jei-client.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/config/jei/bookmarks.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/config/jei/ingredient-list-mod-sort-order.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/config/jei/ingredient-list-type-sort-order.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/config/jei/recipe-category-sort-order.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/config/patchouli-client.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/crash-reports/crash-2021-01-09_23.57.38-fml.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/crash-reports/crash-2021-01-09_23.59.39-fml.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/crash-reports/crash-2021-01-10_00.02.11-fml.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/crash-reports/crash-2021-01-10_01.14.13-fml.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2021-01-09-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2021-01-09-2.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2021-01-09-3.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2021-01-09-4.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2021-01-10-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2021-01-10-10.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2021-01-10-11.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2021-01-10-12.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2021-01-10-13.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2021-01-10-14.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2021-01-10-15.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2021-01-10-16.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2021-01-10-17.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2021-01-10-18.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2021-01-10-19.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2021-01-10-2.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2021-01-10-20.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2021-01-10-21.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2021-01-10-3.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2021-01-10-4.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2021-01-10-5.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2021-01-10-6.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2021-01-10-7.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2021-01-10-8.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2021-01-10-9.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-4.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-5.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/mods/forge-1.16.4-geckolib-3.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/options.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/patchouli_data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/CBR/DIM-1/data/capabilities.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/CBR/DIM-1/data/raids.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/CBR/DIM1/data/capabilities.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/CBR/DIM1/data/raids_end.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/CBR/advancements/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/CBR/data/capabilities.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/CBR/data/raids.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/CBR/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/CBR/level.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/CBR/level.dat_old" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/CBR/playerdata/380df991-f603-344c-a090-369bad2a924a.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/CBR/playerdata/380df991-f603-344c-a090-369bad2a924a.dat_old" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/CBR/poi/r.0.-1.mca" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/CBR/poi/r.0.0.mca" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/CBR/region/r.-1.-1.mca" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/CBR/region/r.-1.0.mca" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/CBR/region/r.0.-1.mca" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/CBR/region/r.0.0.mca" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/CBR/region/r.1.-1.mca" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/CBR/region/r.1.0.mca" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/CBR/serverconfig/forge-server.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/CBR/session.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/CBR/stats/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/usernamecache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carpentersblocksreborn/CarpentersBlocksReborn.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/mods.toml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/mods.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/blockstates/carpenters_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/blockstates/carpenters_collapsible_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/blockstates/carpenters_pressure_plate.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/blockstates/carpenters_slope.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/blockstates/carpenters_torch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/lang/en_US.lang" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_barrier.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_bed.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_block_slab.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_block_slab_vertical.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_boat.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_button.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_button_activated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_collapsible_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_daylight_sensor.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_daylight_sensor_activated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_door.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_door_activated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_flowerpot.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_garage_door.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_garage_door_activated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_gate.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_gate_activated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_hatch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_hatch_activated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_item_frame.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_ladder.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_lantern.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_lever.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_lever_activated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_minecart.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_pressure_plate.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_pressure_plate_activated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_rope.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_safe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_scaffolding.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_slope.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_slope_oblique_exterior.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_slope_oblique_interior.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_slope_wedge.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_slope_wedge_prism.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_stair.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/config/jei/bookmarks.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_staircase.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_torch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_torch_activated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_wall.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/block/carpenters_window.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/item/carpenters_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/item/carpenters_chisel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/item/carpenters_collapsible_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/item/carpenters_hammer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/item/carpenters_pressure_plate.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/models/item/carpenters_torch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/recipes/carpenters_bed.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/recipes/carpenters_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/recipes/carpenters_block_slab.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/recipes/carpenters_block_slab_vertical.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/recipes/carpenters_boat.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/recipes/carpenters_button.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/recipes/carpenters_chisel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/recipes/carpenters_collapsible_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/recipes/carpenters_daylight_sensor.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/recipes/carpenters_door.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/recipes/carpenters_flowerpot.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/recipes/carpenters_garage_door.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/recipes/carpenters_gate.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/recipes/carpenters_hammer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/recipes/carpenters_hatch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/recipes/carpenters_item_frame.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/recipes/carpenters_ladder.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/recipes/carpenters_lantern.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/recipes/carpenters_lever.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/recipes/carpenters_minecart.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/recipes/carpenters_pressure_plate.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/recipes/carpenters_rope.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/recipes/carpenters_safe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/recipes/carpenters_scaffolding.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/recipes/carpenters_slope.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/recipes/carpenters_stair.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/recipes/carpenters_staircase.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/recipes/carpenters_torch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/recipes/carpenters_wall.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/recipes/carpenters_window.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/states/carpenters_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/states/carpenters_collapsible_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/states/carpenters_pressure_plate.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/states/carpenters_pressure_plate_activated.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocks/states/carpenters_torch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/carpenters_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/carpenters_block.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/carpenters_block_collapsible.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/carpenters_block_collapsible.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/carpenters_slope.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/carpenters_slope.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/carpenters_torch.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/carpenters_torch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/lang/en_US.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/lang/en_US.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_barrier.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_barrier.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_bed.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_bed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_block.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_block_collapsible.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_block_collapsible.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_block_slab.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_block_slab_vertical.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_boat.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_boat.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_button.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_button.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_button_activated.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_button_activated.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_daylight_sensor.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_daylight_sensor.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_daylight_sensor_activated.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_daylight_sensor_activated.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_door.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_door.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_door_activated.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_door_activated.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_flowerpot.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_flowerpot.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_garage_door.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_garage_door.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_garage_door_activated.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_garage_door_activated.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_gate.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_gate.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_gate_activated.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_gate_activated.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_hatch.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_hatch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_hatch_activated.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_hatch_activated.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_item_frame.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_item_frame.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_ladder.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_ladder.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_lantern.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_lantern.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_lever.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_lever.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_lever_activated.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_lever_activated.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_minecart.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_minecart.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_pressure_plate.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_pressure_plate.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_pressure_plate_activated.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_pressure_plate_activated.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_rope.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_rope.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_safe.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_safe.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_scaffolding.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_scaffolding.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_slope.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_slope.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_slope_oblique_exterior.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_slope_oblique_exterior.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_slope_oblique_interior.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_slope_oblique_interior.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_slope_wedge.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_slope_wedge.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_slope_wedge_prism.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_slope_wedge_prism.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_staircase.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_staircase.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_stairs.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_stairs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_torch.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_torch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_torch_activated.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_torch_activated.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_wall.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_wall.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_window.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block/carpenters_window.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/recipes/carpenters_bed.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/recipes/carpenters_block.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/recipes/carpenters_block_collapsible.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/recipes/carpenters_block_slab.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/recipes/carpenters_block_slab_vertical.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/recipes/carpenters_boat.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/recipes/carpenters_button.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/recipes/carpenters_chisel.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/recipes/carpenters_daylight_sensor.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/recipes/carpenters_door.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/recipes/carpenters_flowerpot.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/recipes/carpenters_garage_door.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/recipes/carpenters_gate.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/recipes/carpenters_hammer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/recipes/carpenters_hatch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/recipes/carpenters_item_frame.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/recipes/carpenters_ladder.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/recipes/carpenters_lantern.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/recipes/carpenters_lever.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/recipes/carpenters_minecart.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/recipes/carpenters_pressure_plate.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/recipes/carpenters_rope.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/recipes/carpenters_safe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/recipes/carpenters_scaffolding.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/recipes/carpenters_slope.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/recipes/carpenters_staircase.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/recipes/carpenters_stairs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/recipes/carpenters_torch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/recipes/carpenters_wall.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/recipes/carpenters_window.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/states/carpenters_block.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/states/carpenters_block_collapsible.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/states/carpenters_pressure_plate.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/blockstates/bamboo_planks.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/states/carpenters_pressure_plate_activated.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/states/carpenters_torch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_bed/bed_pillow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_daylight_sensor/daylight_sensor_glass_top.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/bed/carpenters_hammer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/bed/carpenters_quilt_green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/bed/carpenters_quilt_multicolor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/bed/carpenters_quilt_orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/bed/carpenters_rainbow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/bed/carpenters_snowflake.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/bed/template/template_16x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/bed/template/template_64x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/chisel/brick.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/chisel/brick_slab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/chisel/brick_slab_staggered.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/chisel/brick_slab_staggered_vertical.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/chisel/brick_slab_vertical.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/chisel/chiseled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/chisel/column.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/chisel/column_top.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/chisel/creeper_face.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/flowerpot/black.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/flowerpot/blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/flowerpot/brown.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/flowerpot/cyan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/flowerpot/gray.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/flowerpot/green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/flowerpot/light_blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/flowerpot/light_gray.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/flowerpot/lime.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/flowerpot/magenta.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/flowerpot/orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/flowerpot/original.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/flowerpot/pink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/flowerpot/purple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/flowerpot/rainbow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/flowerpot/red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/flowerpot/white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/flowerpot/yellow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/tile/stock_chain.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/tile/stock_chainlink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/tile/stock_dandelion.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/tile/stock_decorative.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/tile/stock_decorative2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/tile/stock_diagonal_striped.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/tile/stock_dots.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/tile/stock_grid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/tile/stock_leaves.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/tile/stock_offset_squares.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/tile/stock_quilt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/tile/stock_shifted.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_designs/tile/stock_striped.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_door/door_french_glass_bottom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_door/door_french_glass_top.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_door/door_glass_tall_bottom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_door/door_glass_tall_top.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_door/door_glass_top.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_door/door_screen_tall.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_flowerpot/carpentersblocksreborn_flowerpot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_flowerpot/carpentersblocksreborn_flowerpot_glass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_garage_door/glass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_garage_door/glass_top.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_general/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_general/blank.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_general/full_frame.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_general/quartered_frame.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_general/solid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_hatch/hatch_french_glass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_hatch/hatch_glass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_hatch/hatch_screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_lever/carpentersblocksreborn_lever.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_overlay/overlay_fast_grass_side.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_overlay/overlay_hay_side.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_overlay/overlay_mycelium_side.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_overlay/overlay_snow_side.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_safe/safe_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_slope/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_slope/oblique_neg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_slope/oblique_pos.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_tile/blank.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_torch/carpentersblocksreborn_torch.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_torch/lantern_glass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_torch/torch_head_lit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_torch/torch_head_smoldering.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/blocks/carpenters_torch/torch_head_unlit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/items/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/items/carpenters_bed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/items/carpenters_chisel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/items/carpenters_door.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/items/carpenters_hammer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/textures/items/carpenters_tile.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,6 +392,13 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -214,6 +406,14 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1iUu0uV0OrGbAFyxuDTmOSLfV1k" />
   <component name="ProjectViewState">
@@ -228,7 +428,9 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/carpentersblocksreborn" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/assets/carpentersblocksreborn/models/block" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -236,10 +438,32 @@
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="carpentersblocksreborn" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\r-Dev\Visual Studio Code Workspace\Mods\carpentersblocksreborn\src\main\resources\assets\carpentersblocksreborn\models\block" />
+      <recent name="F:\r-Dev\Visual Studio Code Workspace\Mods\carpentersblocksreborn\src\main\resources\assets\carpentersblocksreborn\loot_tables\blocks" />
+      <recent name="F:\r-Dev\Visual Studio Code Workspace\Mods\carpentersblocksreborn\src\main\resources\data\carpentersblocksreborn\recipes" />
+      <recent name="F:\r-Dev\Visual Studio Code Workspace\Mods\carpentersblocksreborn\src\main\resources\assets\carpentersblocksreborn\models\item" />
+      <recent name="F:\r-Dev\Visual Studio Code Workspace\Mods\carpentersblocksreborn\src\main\resources\assets\carpentersblocksreborn\blockstates" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\r-Dev\Visual Studio Code Workspace\Mods\carpentersblocksreborn\src\main\java\carpentersblocksreborn\block" />
-      <recent name="F:\r-Dev\Visual Studio Code Workspace\Mods\carpentersblocksreborn\src\main\java\carpentersblocksreborn\api" />
-      <recent name="F:\r-Dev\Visual Studio Code Workspace\Mods\carpentersblocksreborn" />
+      <recent name="F:\r-Dev\Visual Studio Code Workspace\Mods\carpentersblocksreborn\src\main\resources\data\carpentersblocksreborn\recipes\advancements\carpentersblocksreborn\decorations" />
+      <recent name="F:\r-Dev\Visual Studio Code Workspace\Mods\carpentersblocksreborn\src\main\resources\data" />
+      <recent name="F:\r-Dev\Visual Studio Code Workspace\Mods\carpentersblocksreborn\src\main\resources\carpentersblocksreborn\recipes" />
+      <recent name="F:\r-Dev\Visual Studio Code Workspace\Mods\carpentersblocksreborn\src\main\resources\carpentersblocksreborn" />
+      <recent name="F:\r-Dev\Visual Studio Code Workspace\Mods\carpentersblocksreborn\src\main\resources\data\recipes" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="carpentersblocksreborn.block" />
+      <recent name="carpentersblocksreborn" />
+    </key>
+    <key name="MoveInnerDialog.RECENTS_KEY">
+      <recent name="carpentersblocksreborn" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="carpentersblocksreborn.block" />
     </key>
   </component>
   <component name="RunManager" selected="Application.runClient">
@@ -331,17 +555,17 @@
       <item itemvalue="Application.runClient" />
       <item itemvalue="Application.runData" />
       <item itemvalue="Application.runServer" />
-      <item itemvalue="Gradle.carpentersblocksreborn [build]" />
       <item itemvalue="Gradle.carpentersblocksreborn [buildDependents]" />
       <item itemvalue="Gradle.carpentersblocksreborn [buildNeeded]" />
+      <item itemvalue="Gradle.carpentersblocksreborn [build]" />
       <item itemvalue="Gradle.carpentersblocksreborn [clean]" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.carpentersblocksreborn [clean]" />
+        <item itemvalue="Gradle.carpentersblocksreborn [build]" />
         <item itemvalue="Gradle.carpentersblocksreborn [buildNeeded]" />
         <item itemvalue="Gradle.carpentersblocksreborn [buildDependents]" />
-        <item itemvalue="Gradle.carpentersblocksreborn [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -424,7 +648,21 @@
       <option name="project" value="LOCAL" />
       <updated>1610266120091</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added blocks, items, entities and redid the en_US.json file to be properly formatted. Testing and debugging currently.">
+      <created>1610333440259</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1610333440259</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added blocks, items, entities and redid the en_US.json file to be properly formatted. Testing and debugging currently.">
+      <created>1610333475591</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1610333475591</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -450,6 +688,24 @@
     <MESSAGE value="Started process for importing blocks and reverted back to java 8 from 11 since forge doesnt support 11 yet sadly" />
     <MESSAGE value="Added blocks, items, entities and redid the en_US.json file to be properly formatted. Testing and debugging currently." />
     <option name="LAST_COMMIT_MESSAGE" value="Added blocks, items, entities and redid the en_US.json file to be properly formatted. Testing and debugging currently." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="com.google.gson.JsonSyntaxException" package="com.google.gson" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="net.minecraft.crash.ReportedException" package="net.minecraft.crash" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

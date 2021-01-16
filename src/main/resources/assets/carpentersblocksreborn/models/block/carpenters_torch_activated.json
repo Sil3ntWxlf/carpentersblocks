@@ -1,7 +1,7 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "carpentersblocksreborn:blocks/general/uncovered_full_frame"
+    "all": "carpentersblocksreborn:block/carpenters_torch/carpentersblocksreborn_torch"
   },
   "elements": [
     {   "from": [ 1, 0, 1 ],

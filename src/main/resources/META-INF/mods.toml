@@ -50,10 +50,3 @@ With Carpenter's Blocks, building takes on new possibilities!
     ordering="NONE"
     # Side this dependency is applied on - BOTH, CLIENT or SERVER
     side="BOTH"
-# Here's another dependency
-#[[dependencies.carpentersblocksreborn]]
-#    modId="geckolib"
-#    mandatory=true
-#    versionRange="[3.0.0]"
-#    ordering="BEFORE"
-#    side="CLIENT"
