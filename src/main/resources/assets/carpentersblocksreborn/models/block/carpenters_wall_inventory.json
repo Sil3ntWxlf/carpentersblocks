@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "carpentersblocksreborn:block/carpenters_general/quartered_frame"
+  }
+}

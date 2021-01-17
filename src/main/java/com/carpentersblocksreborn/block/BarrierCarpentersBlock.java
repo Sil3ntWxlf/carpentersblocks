@@ -9,6 +9,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ActionResultType;
 import net.minecraft.util.Direction;
@@ -26,9 +27,12 @@ public class BarrierCarpentersBlock extends FenceBlock implements CarpentersBloc
     @Override
     public boolean canConnect(BlockState state, boolean isSideSolid, Direction direction) {
         Block block = state.getBlock();
-        boolean flag = block instanceof BarrierCarpentersBlock;
-        boolean flag1 = block instanceof FenceGateBlock && FenceGateBlock.isParallel(state, direction);
-        return !cannotAttach(block) && isSideSolid || flag || flag1;
+        if (block instanceof BarrierCarpentersBlock) {
+            return true;
+        }
+        boolean woodenFence = block.isIn(BlockTags.FENCES) && block.isIn(BlockTags.WOODEN_FENCES);
+        boolean fenceGate = block instanceof FenceGateBlock && FenceGateBlock.isParallel(state, direction);
+        return !cannotAttach(block) && isSideSolid || woodenFence || fenceGate;
     }
 
     @Override

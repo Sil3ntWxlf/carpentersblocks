@@ -2,6 +2,7 @@ package com.carpentersblocksreborn.init;
 
 import com.carpentersblocksreborn.CarpentersBlocksReborn;
 import com.carpentersblocksreborn.block.BarrierCarpentersBlock;
+import com.carpentersblocksreborn.block.WallCarpentersBlock;
 import com.carpentersblocksreborn.block.WaterloggableCarpentersBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -64,7 +65,7 @@ public class CarpentersBlocks {
 
     public static final RegistryObject<Block> CARPENTERS_TORCH = BLOCKS.register("carpenters_torch", () -> new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1)));
 
-    public static final RegistryObject<Block> CARPENTERS_WALL = BLOCKS.register("carpenters_wall", () -> new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1)));
+    public static final RegistryObject<Block> CARPENTERS_WALL = BLOCKS.register("carpenters_wall", () -> new WallCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1)));
 
     public static final RegistryObject<Block> CARPENTERS_WINDOW = BLOCKS.register("carpenters_window", () -> new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1)));
 }
