@@ -130,39 +130,39 @@ public class CarpentersBlocksReborn {
             System.out.println("test test 1 2 3");
             IForgeRegistry<Block> blocks = blockRegistryEvent.getRegistry();
             cbrPlanks = new Block(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1));
-            cbrPlanks.setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "bamboo_planks"));
+            cbrPlanks.setRegistryName(new ResourceLocation("carpentersblocksreborn", "bamboo_planks"));
             blocks.register(cbrPlanks);
 
             cbrBSlabs = new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1));
-            cbrBSlabs.setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "bamboo_slabs"));
+            cbrBSlabs.setRegistryName(new ResourceLocation("carpentersblocksreborn", "bamboo_slabs"));
             blocks.register(cbrBSlabs);
 
             cbrBSV = new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1));
-            cbrBSV.setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "bamboo_slabs_vertical"));
+            cbrBSV.setRegistryName(new ResourceLocation("carpentersblocksreborn", "bamboo_slabs_vertical"));
             blocks.register(cbrBSV);
 
             cbrBarrier = new BarrierCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1));
-            cbrBarrier.setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_barrier"));
+            cbrBarrier.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_barrier"));
             blocks.register(cbrBarrier);
 
             cbrBlock = new Block(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1));
-            cbrBlock.setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_block"));
+            cbrBlock.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_block"));
             blocks.register(cbrBlock);
 
             cbrBC = new Block(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1));
-            cbrBC.setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_block_collapsible"));
+            cbrBC.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_block_collapsible"));
             blocks.register(cbrBC);
 
             cbrSlabs = new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1));
-            cbrSlabs.setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_slabs"));
+            cbrSlabs.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_slabs"));
             blocks.register(cbrSlabs);
 
             cbrSV = new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1));
-            cbrSV.setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_slabs_vertical"));
+            cbrSV.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_slabs_vertical"));
             blocks.register(cbrSV);
 
             cbrDS = new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1));
-            cbrDS.setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_daylight_sensor"));
+            cbrDS.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_daylight_sensor"));
             blocks.register(cbrDS);
 
             //cbrDoor = new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1));
@@ -170,51 +170,51 @@ public class CarpentersBlocksReborn {
             //blocks.register(cbrDoor);
 
             cbrGD = new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1));
-            cbrGD.setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_garage_door"));
+            cbrGD.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_garage_door"));
             blocks.register(cbrGD);
 
             cbrGate = new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1));
-            cbrGate.setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_gate"));
+            cbrGate.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_gate"));
             blocks.register(cbrGate);
 
             cbrHatch = new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1));
-            cbrHatch.setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_hatch"));
+            cbrHatch.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_hatch"));
             blocks.register(cbrHatch);
 
             cbrLadder = new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1));
-            cbrLadder.setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_ladder"));
+            cbrLadder.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_ladder"));
             blocks.register(cbrLadder);
 
             cbrLantern = new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1));
-            cbrLantern.setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_lantern"));
+            cbrLantern.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_lantern"));
             blocks.register(cbrLantern);
 
             cbrScaffolding = new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1));
-            cbrScaffolding.setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_scaffolding"));
+            cbrScaffolding.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_scaffolding"));
             blocks.register(cbrScaffolding);
 
             cbrSlope = new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1));
-            cbrSlope.setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_slope"));
+            cbrSlope.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_slope"));
             blocks.register(cbrSlope);
 
             cbrSOE = new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1));
-            cbrSOE.setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_slope_oblique_exterior"));
+            cbrSOE.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_slope_oblique_exterior"));
             blocks.register(cbrSOE);
 
             cbrSOI = new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1));
-            cbrSOI.setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_slope_oblique_interior"));
+            cbrSOI.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_slope_oblique_interior"));
             blocks.register(cbrSOI);
 
             cbrSP = new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1));
-            cbrSP.setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_slope_prism"));
+            cbrSP.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_slope_prism"));
             blocks.register(cbrSP);
 
             cbrSW = new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1));
-            cbrSW.setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_slope_wedge"));
+            cbrSW.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_slope_wedge"));
             blocks.register(cbrSW);
 
             cbrSWP = new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1));
-            cbrSWP.setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_slope_wedge_prism"));
+            cbrSWP.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_slope_wedge_prism"));
             blocks.register(cbrSWP);
 
             //cbrSafe = new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1));
@@ -222,11 +222,11 @@ public class CarpentersBlocksReborn {
             //blocks.register(cbrSafe);
 
             cbrStairs = new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1));
-            cbrStairs.setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_stairs"));
+            cbrStairs.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_stairs"));
             blocks.register(cbrStairs);
 
             cbrStaircase = new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1));
-            cbrStaircase.setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_staircase"));
+            cbrStaircase.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_staircase"));
             blocks.register(cbrStaircase);
 
             //cbrTorch = new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1));
@@ -234,7 +234,7 @@ public class CarpentersBlocksReborn {
             //blocks.register(cbrTorch);
 
             cbrWall = new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1));
-            cbrWall.setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_wall"));
+            cbrWall.setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_wall"));
             blocks.register(cbrWall);
 
             //cbrWindow = new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1));
@@ -249,47 +249,47 @@ public class CarpentersBlocksReborn {
             LOGGER.info("HELLO from Item Registry");
             IForgeRegistry<Item> items = itemRegistryEvent.getRegistry();
             //items.register(new BlockItem(cbrChisel, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_chisel")));
-            items.register(new BlockItem(cbrPlanks, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "bamboo_planks")));
-            items.register(new BlockItem(cbrBSlabs, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "bamboo_slabs")));
-            items.register(new BlockItem(cbrBSV, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "bamboo_slabs_vertical")));
-            items.register(new BlockItem(cbrBarrier, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_barrier")));
+            items.register(new BlockItem(cbrPlanks, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "bamboo_planks")));
+            items.register(new BlockItem(cbrBSlabs, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "bamboo_slabs")));
+            items.register(new BlockItem(cbrBSV, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "bamboo_slabs_vertical")));
+            items.register(new BlockItem(cbrBarrier, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_barrier")));
             //items.register(new BlockItem(cbrBed, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_bed")));
-            items.register(new BlockItem(cbrBlock, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_block")));
-            items.register(new BlockItem(cbrBC, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_block_collapsible")));
-            items.register(new BlockItem(cbrSlabs, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_slabs")));
-            items.register(new BlockItem(cbrSV, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_slabs_vertical")));
+            items.register(new BlockItem(cbrBlock, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_block")));
+            items.register(new BlockItem(cbrBC, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_block_collapsible")));
+            items.register(new BlockItem(cbrSlabs, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_slabs")));
+            items.register(new BlockItem(cbrSV, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_slabs_vertical")));
             //items.register(new BlockItem(cbrBoat, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_boat")));
             //items.register(new BlockItem(cbrButton, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_button")));
-            items.register(new BlockItem(cbrDS, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_daylight_sensor")));
+            items.register(new BlockItem(cbrDS, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_daylight_sensor")));
             //items.register(new BlockItem(cbrDoor, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_door")));
             //items.register(new BlockItem(cbrFlowerpot, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_flowerpot")));
-            items.register(new BlockItem(cbrGD, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_garage_door")));
-            items.register(new BlockItem(cbrGate, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_gate")));
+            items.register(new BlockItem(cbrGD, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_garage_door")));
+            items.register(new BlockItem(cbrGate, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_gate")));
             //items.register(new BlockItem(cbrHammer, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_hammer")));
-            items.register(new BlockItem(cbrHatch, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_hatch")));
+            items.register(new BlockItem(cbrHatch, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_hatch")));
             //items.register(new BlockItem(cbrIF, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_item_frame")));
-            items.register(new BlockItem(cbrLadder, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_ladder")));
-            items.register(new BlockItem(cbrLantern, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_lantern")));
+            items.register(new BlockItem(cbrLadder, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_ladder")));
+            items.register(new BlockItem(cbrLantern, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_lantern")));
             //items.register(new BlockItem(cbrLever, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_lever")));
             //items.register(new BlockItem(cbrMinecart, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_minecart")));
             //items.register(new BlockItem(cbrPP, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_pressure_plate")));
             //items.register(new BlockItem(cbrRope, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_rope")));
             //items.register(new BlockItem(cbrSafe, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_safe")));
-            items.register(new BlockItem(cbrScaffolding, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_scaffolding")));
-            items.register(new BlockItem(cbrSlope, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_slope")));
-            items.register(new BlockItem(cbrSOE, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_slope_oblique_exterior")));
-            items.register(new BlockItem(cbrSOI, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_slope_oblique_interior")));
-            items.register(new BlockItem(cbrSP, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_slope_prism")));
-            items.register(new BlockItem(cbrSW, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_slope_wedge")));
-            items.register(new BlockItem(cbrSWP, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_slope_wedge_prism")));
-            items.register(new BlockItem(cbrStairs, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_stairs")));
-            items.register(new BlockItem(cbrStaircase, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_staircase")));
+            items.register(new BlockItem(cbrScaffolding, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_scaffolding")));
+            items.register(new BlockItem(cbrSlope, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_slope")));
+            items.register(new BlockItem(cbrSOE, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_slope_oblique_exterior")));
+            items.register(new BlockItem(cbrSOI, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_slope_oblique_interior")));
+            items.register(new BlockItem(cbrSP, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_slope_prism")));
+            items.register(new BlockItem(cbrSW, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_slope_wedge")));
+            items.register(new BlockItem(cbrSWP, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_slope_wedge_prism")));
+            items.register(new BlockItem(cbrStairs, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_stairs")));
+            items.register(new BlockItem(cbrStaircase, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_staircase")));
             //items.register(new BlockItem(cbrTorch, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_torch")));
-            items.register(new BlockItem(cbrWall, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("com.carpentersblocksreborn", "carpenters_wall")));
+            items.register(new BlockItem(cbrWall, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_wall")));
             //items.register(new BlockItem(cbrWindow, new Item.Properties().group(creativeGroup)).setRegistryName(new ResourceLocation("carpentersblocksreborn", "carpenters_window")));
         }
 
-        public static final ItemGroup creativeGroup = new ItemGroup("com.carpentersblocksreborn") {
+        public static final ItemGroup creativeGroup = new ItemGroup("carpentersblocksreborn") {
             @Override
             public ItemStack createIcon() {
                 return new ItemStack(RegistryEvents.cbrBlock);
