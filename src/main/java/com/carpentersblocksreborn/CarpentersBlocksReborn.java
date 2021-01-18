@@ -3,6 +3,8 @@ package com.carpentersblocksreborn;
 import com.carpentersblocksreborn.init.CarpentersBlockEntityTypes;
 import com.carpentersblocksreborn.init.CarpentersItemGroups;
 import com.carpentersblocksreborn.init.CarpentersBlocks;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
@@ -10,6 +12,7 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import software.bernie.geckolib3.GeckoLib;
 
@@ -22,6 +25,11 @@ public class CarpentersBlocksReborn {
 
         CarpentersBlocks.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
         CarpentersBlockEntityTypes.BLOCK_ENTITY_TYPES.register(FMLJavaModLoadingContext.get().getModEventBus());
+
+        FMLJavaModLoadingContext.get().getModEventBus().addListener((FMLClientSetupEvent event) -> {
+            RenderTypeLookup.setRenderLayer(CarpentersBlocks.CARPENTERS_TORCH.get(), RenderType.getCutout());
+            // RenderTypeLookup.setRenderLayer(CarpentersBlocks.CARPENTERS_WALL_TORCH.get(), RenderType.getCutout());
+        });
 
         GeckoLib.initialize();
     }
