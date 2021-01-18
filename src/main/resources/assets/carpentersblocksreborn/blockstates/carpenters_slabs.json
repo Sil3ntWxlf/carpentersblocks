@@ -1,5 +1,13 @@
 {
   "variants": {
-    "": { "model": "carpentersblocksreborn:block/carpenters_slabs" }
+    "type=bottom": {
+      "model": "carpentersblocksreborn:block/carpenters_slabs"
+    },
+    "type=double": {
+      "model": "carpentersblocksreborn:block/carpenters_slabs"
+    },
+    "type=top": {
+      "model": "carpentersblocksreborn:block/carpenters_slabs_top"
+    }
   }
 }
