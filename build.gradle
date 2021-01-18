@@ -11,17 +11,20 @@ configFile.withReader {
 buildscript {
     repositories {
         maven { url = 'https://files.minecraftforge.net/maven' }
+        maven { url='https://dist.creeper.host/Sponge/maven' }
         jcenter()
         mavenCentral()
     }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '3.+', changing: true
+        classpath group: 'org.spongepowered', name: 'mixingradle', version: '0.7-SNAPSHOT'
     }
 }
 
 apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'net.minecraftforge.gradle'
+apply plugin: 'org.spongepowered.mixin'
 // Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
@@ -51,6 +54,7 @@ minecraft {
     runs {
         client {
             workingDirectory project.file('run')
+            arg "-mixin.config=carpentersblocksreborn.mixins.json"
 
             // Recommended logging data for a userdev environment
             property 'forge.logging.markers', 'REGISTRIES'
@@ -68,6 +72,7 @@ minecraft {
 
         server {
             workingDirectory project.file('run')
+            arg "-mixin.config=carpentersblocksreborn.mixins.json"
 
             // Recommended logging level for the console
             property 'forge.logging.console.level', 'debug'
@@ -123,4 +128,8 @@ dependencies {
         // at runtime, use the full JEI jar
         runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}")
 
+}
+
+mixin {
+    add sourceSets.main, "carpentersblocksreborn.refmap.json"
 }
