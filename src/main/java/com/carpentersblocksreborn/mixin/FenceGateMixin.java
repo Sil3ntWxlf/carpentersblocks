@@ -1,6 +1,6 @@
 package com.carpentersblocksreborn.mixin;
 
-import com.carpentersblocksreborn.block.BarrierCarpentersBlock;
+import com.carpentersblocksreborn.block.WallCarpentersBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.FenceGateBlock;
 import org.spongepowered.asm.mixin.Mixin;
@@ -13,7 +13,7 @@ public class FenceGateMixin {
 
     @Inject(at = @At("HEAD"), method = "isWall(Lnet/minecraft/block/BlockState;)Z", cancellable = true)
     private void isWall(BlockState state, CallbackInfoReturnable<Boolean> info) {
-        if (state.getBlock() instanceof BarrierCarpentersBlock) {
+        if (state.getBlock() instanceof WallCarpentersBlock) {
             info.setReturnValue(true);
         }
     }
