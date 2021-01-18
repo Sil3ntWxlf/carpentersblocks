@@ -1,13 +1,11 @@
 package com.carpentersblocksreborn.init;
 
 import com.carpentersblocksreborn.CarpentersBlocksReborn;
-import com.carpentersblocksreborn.block.BambooSlabsBlock;
-import com.carpentersblocksreborn.block.BarrierCarpentersBlock;
-import com.carpentersblocksreborn.block.WallCarpentersBlock;
-import com.carpentersblocksreborn.block.WaterloggableCarpentersBlock;
+import com.carpentersblocksreborn.block.*;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
+import net.minecraft.block.StairsBlock;
 import net.minecraft.block.material.Material;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
@@ -22,6 +20,8 @@ public class CarpentersBlocks {
     public static final RegistryObject<Block> BAMBOO_SLABS = BLOCKS.register("bamboo_slabs", () -> new BambooSlabsBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
 
     public static final RegistryObject<Block> BAMBOO_SLABS_VERTICAL = BLOCKS.register("bamboo_slabs_vertical", () -> new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
+
+    public static final RegistryObject<Block> BAMBOO_STAIRS = BLOCKS.register("bamboo_stairs", () -> new BambooStairsBlock(BAMBOO_PLANKS.get()::getDefaultState, AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
 
     public static final RegistryObject<Block> CARPENTERS_BARRIER = BLOCKS.register("carpenters_barrier", () -> new BarrierCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
 

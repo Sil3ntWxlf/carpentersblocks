@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "carpentersblocksreborn:block/carpenters_general/bamboo_planks",
+    "top": "carpentersblocksreborn:block/carpenters_general/bamboo_planks",
+    "side": "carpentersblocksreborn:block/carpenters_general/bamboo_planks"
+  }
+}
