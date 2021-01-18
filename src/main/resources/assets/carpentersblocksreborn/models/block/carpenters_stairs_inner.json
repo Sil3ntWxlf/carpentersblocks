@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/stairs",
+  "parent": "minecraft:block/inner_stairs",
   "textures": {
     "bottom": "carpentersblocksreborn:block/carpenters_general/solid",
     "top": "carpentersblocksreborn:block/carpenters_general/solid",

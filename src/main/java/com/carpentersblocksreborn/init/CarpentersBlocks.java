@@ -61,7 +61,7 @@ public class CarpentersBlocks {
 
     public static final RegistryObject<Block> CARPENTERS_SAFE = BLOCKS.register("carpenters_safe", () -> new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
 
-    public static final RegistryObject<Block> CARPENTERS_STAIRS = BLOCKS.register("carpenters_stairs", () -> new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> CARPENTERS_STAIRS = BLOCKS.register("carpenters_stairs", () -> new StairsCarpentersBlock(BAMBOO_PLANKS.get()::getDefaultState, AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
 
     public static final RegistryObject<Block> CARPENTERS_STAIRCASE = BLOCKS.register("carpenters_staircase", () -> new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
 
