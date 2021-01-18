@@ -1,5 +1,13 @@
 {
   "variants": {
-    "": { "model": "carpentersblocksreborn:block/bamboo_slabs" }
+    "type=bottom": {
+      "model": "carpentersblocksreborn:block/bamboo_slabs"
+    },
+    "type=double": {
+      "model": "carpentersblocksreborn:block/bamboo_planks"
+    },
+    "type=top": {
+      "model": "carpentersblocksreborn:block/bamboo_slabs_top"
+    }
   }
 }

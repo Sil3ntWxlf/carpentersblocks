@@ -1,5 +1,5 @@
 {
-    "parent": "minecraft:block/slab",
+    "parent": "minecraft:block/slab_top",
     "textures": {
         "bottom": "carpentersblocksreborn:block/carpenters_general/bamboo_planks",
         "top": "carpentersblocksreborn:block/carpenters_general/bamboo_planks",

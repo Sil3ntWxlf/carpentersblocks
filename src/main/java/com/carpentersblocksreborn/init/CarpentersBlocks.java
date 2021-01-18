@@ -1,6 +1,7 @@
 package com.carpentersblocksreborn.init;
 
 import com.carpentersblocksreborn.CarpentersBlocksReborn;
+import com.carpentersblocksreborn.block.BambooSlabsBlock;
 import com.carpentersblocksreborn.block.BarrierCarpentersBlock;
 import com.carpentersblocksreborn.block.WallCarpentersBlock;
 import com.carpentersblocksreborn.block.WaterloggableCarpentersBlock;
@@ -18,7 +19,7 @@ public class CarpentersBlocks {
 
     public static final RegistryObject<Block> BAMBOO_PLANKS = BLOCKS.register("bamboo_planks", () -> new Block(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
 
-    public static final RegistryObject<Block> BAMBOO_SLABS = BLOCKS.register("bamboo_slabs", () -> new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> BAMBOO_SLABS = BLOCKS.register("bamboo_slabs", () -> new BambooSlabsBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
 
     public static final RegistryObject<Block> BAMBOO_SLABS_VERTICAL = BLOCKS.register("bamboo_slabs_vertical", () -> new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
 
