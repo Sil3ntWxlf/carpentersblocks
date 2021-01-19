@@ -1,5 +1,10 @@
 {
   "variants": {
-    "": { "model": "carpentersblocksreborn:block/carpenters_scaffolding" }
+    "bottom=false": {
+      "model": "carpentersblocksreborn:block/carpenters_scaffolding_stable"
+    },
+    "bottom=true": {
+      "model": "carpentersblocksreborn:block/carpenters_scaffolding_unstable"
+    }
   }
 }

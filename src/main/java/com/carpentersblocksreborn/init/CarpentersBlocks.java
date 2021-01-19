@@ -4,6 +4,7 @@ import com.carpentersblocksreborn.CarpentersBlocksReborn;
 import com.carpentersblocksreborn.block.*;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.CarpetBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.particles.ParticleTypes;
@@ -49,7 +50,11 @@ public class CarpentersBlocks {
 
     public static final RegistryObject<Block> CARPENTERS_LANTERN = BLOCKS.register("carpenters_lantern", () -> new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
 
-    public static final RegistryObject<Block> CARPENTERS_SCAFFOLDING = BLOCKS.register("carpenters_scaffolding", () -> new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> CARPENTERS_LEVER = BLOCKS.register("carpenters_lever", () -> new LeverCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
+
+    //public static final RegistryObject<Block> CARPENTERS_PRESSURE_PLATE = BLOCKS.register("carpenters_pressure_plate", () -> new PressurePlateCarpentersBlock(CARPENTERS_BLOCK.get().getDefaultState(), AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
+
+    public static final RegistryObject<Block> CARPENTERS_SCAFFOLDING = BLOCKS.register("carpenters_scaffolding", () -> new ScaffoldingCarpentersBlock(CARPENTERS_BLOCK.get().getDefaultState(), AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
 
     public static final RegistryObject<Block> CARPENTERS_SLOPE = BLOCKS.register("carpenters_slope", () -> new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
 

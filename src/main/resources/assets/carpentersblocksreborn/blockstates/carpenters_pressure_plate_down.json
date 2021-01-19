@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/pressure_plate_down",
+    "textures": {
+        "texture": "carpentersblocksreborn:block/carpenters_general/full_frame"
+    }
+}
