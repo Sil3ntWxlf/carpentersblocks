@@ -17,11 +17,13 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import software.bernie.geckolib3.GeckoLib;
 
+import java.util.Objects;
+
 @Mod(CarpentersBlocksReborn.MOD_ID)
 public class CarpentersBlocksReborn {
     public static final String MOD_ID = "carpentersblocksreborn";
 
-    public CarpentersBlocksReborn(String has_advancement) {
+    public CarpentersBlocksReborn() {
         MinecraftForge.EVENT_BUS.register(this);
 
         CarpentersBlocks.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
@@ -48,7 +50,7 @@ public class CarpentersBlocksReborn {
                         Item.Properties properties = new Item.Properties().group(CarpentersItemGroups.CARPENTERS_BLOCKS);
                         BlockItem blockItem = new BlockItem(block, properties);
 
-                        blockItem.setRegistryName(block.getRegistryName());
+                        blockItem.setRegistryName(Objects.requireNonNull(block.getRegistryName()));
                         itemRegistryEvent.getRegistry().register(blockItem);
                     });
         }

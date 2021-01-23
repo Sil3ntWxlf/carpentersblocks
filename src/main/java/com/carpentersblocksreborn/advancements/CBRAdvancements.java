@@ -8,6 +8,5 @@ public class CBRAdvancements {
     public static final CraftChiselTrigger CRAFT_CBR_CHISEL = CriteriaTriggers.register(new CraftChiselTrigger());
     public static final PlaceCBRBlockTrigger PLACE_CBR_BLOCK = CriteriaTriggers.register(new PlaceCBRBlockTrigger());
 
-
     public static void init() {}
 }

@@ -1,6 +1,5 @@
 package com.carpentersblocksreborn.advancements;
 
-import com.carpentersblocksreborn.CarpentersBlocksReborn;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;

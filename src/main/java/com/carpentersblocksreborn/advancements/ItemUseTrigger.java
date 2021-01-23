@@ -1,6 +1,5 @@
 package com.carpentersblocksreborn.advancements;
 
-import com.carpentersblocksreborn.CarpentersBlocksReborn;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
 import com.google.gson.JsonObject;
@@ -23,7 +22,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-    public class ItemUseTrigger implements ICriterionTrigger<ItemUseTrigger.Instance> {
+public class ItemUseTrigger implements ICriterionTrigger<ItemUseTrigger.Instance> {
 
         public static final ResourceLocation ID = new ResourceLocation("on_item_use");
         private final Map<PlayerAdvancements, Listeners> listeners = Maps.newHashMap();
