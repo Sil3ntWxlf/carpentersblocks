@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/carpet",
   "textures": {
-    "wool": "minecraft:block/white_wool"
+    "wool": "carpentersblocksreborn:block/carpenters_general/solid"
   }
 }
