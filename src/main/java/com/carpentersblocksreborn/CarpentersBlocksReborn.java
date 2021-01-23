@@ -21,7 +21,7 @@ import software.bernie.geckolib3.GeckoLib;
 public class CarpentersBlocksReborn {
     public static final String MOD_ID = "carpentersblocksreborn";
 
-    public CarpentersBlocksReborn() {
+    public CarpentersBlocksReborn(String has_advancement) {
         MinecraftForge.EVENT_BUS.register(this);
 
         CarpentersBlocks.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
