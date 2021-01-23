@@ -1,6 +1,6 @@
 {
-    "parent": "item/generated",
-	"textures": {
-        "layer0": "carpentersblocksreborn:items/chisel"
-    }
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "carpentersblocksreborn:items/chisel"
+  }
 }
