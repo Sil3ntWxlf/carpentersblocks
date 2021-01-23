@@ -3,6 +3,7 @@ package com.carpentersblocksreborn;
 import com.carpentersblocksreborn.init.CarpentersBlockEntityTypes;
 import com.carpentersblocksreborn.init.CarpentersItemGroups;
 import com.carpentersblocksreborn.init.CarpentersBlocks;
+import com.carpentersblocksreborn.init.CarpentersItems;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.item.BlockItem;
@@ -25,6 +26,8 @@ public class CarpentersBlocksReborn {
 
         CarpentersBlocks.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
         CarpentersBlockEntityTypes.BLOCK_ENTITY_TYPES.register(FMLJavaModLoadingContext.get().getModEventBus());
+
+        CarpentersItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
 
         FMLJavaModLoadingContext.get().getModEventBus().addListener((FMLClientSetupEvent event) -> {
             RenderTypeLookup.setRenderLayer(CarpentersBlocks.CARPENTERS_TORCH.get(), RenderType.getCutout());

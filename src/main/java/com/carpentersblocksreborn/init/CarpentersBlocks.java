@@ -31,6 +31,8 @@ public class CarpentersBlocks {
 
     public static final RegistryObject<Block> CARPENTERS_BLOCK_COLLAPSIBLE = BLOCKS.register("carpenters_block_collapsible", () -> new Block(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
 
+    public static final RegistryObject<Block> CARPENTERS_CARPET = BLOCKS.register("carpenters_carpet", () -> new Block(AbstractBlock.Properties.create(Material.WOOL).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.CLOTH)));
+
     public static final RegistryObject<Block> CARPENTERS_SLABS = BLOCKS.register("carpenters_slabs", () -> new SlabsCarpentersBlock(CARPENTERS_BLOCK.get().getDefaultState(), AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
 
     public static final RegistryObject<Block> CARPENTERS_SLABS_VERTICAL = BLOCKS.register("carpenters_slabs_vertical", () -> new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
