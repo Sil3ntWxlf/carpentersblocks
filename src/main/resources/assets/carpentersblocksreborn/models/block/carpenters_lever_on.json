@@ -21,11 +21,11 @@
       "to": [ 9, 11, 9 ],
       "rotation": { "origin": [ 8, 1, 8 ], "axis": "x", "angle": 45 },
       "faces": {
-        "up":    { "uv": [ 7, 6, 9,  8 ], "texture": "block/carpenters_lever/lever" },
-        "north": { "uv": [ 7, 6, 9, 16 ], "texture": "block/carpenters_lever/lever" },
-        "south": { "uv": [ 7, 6, 9, 16 ], "texture": "block/carpenters_lever/lever" },
-        "west":  { "uv": [ 7, 6, 9, 16 ], "texture": "block/carpenters_lever/lever" },
-        "east":  { "uv": [ 7, 6, 9, 16 ], "texture": "block/carpenters_lever/lever" }
+        "up":    { "uv": [ 7, 6, 9,  8 ], "texture": "#lever" },
+        "north": { "uv": [ 7, 6, 9, 16 ], "texture": "#lever" },
+        "south": { "uv": [ 7, 6, 9, 16 ], "texture": "#lever" },
+        "west":  { "uv": [ 7, 6, 9, 16 ], "texture": "#lever" },
+        "east":  { "uv": [ 7, 6, 9, 16 ], "texture": "#lever" }
       }
     }
   ]
