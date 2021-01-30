@@ -35,7 +35,7 @@ public class CarpentersBlocks {
 
     public static final RegistryObject<Block> CARPENTERS_SLABS = BLOCKS.register("carpenters_slabs", () -> new SlabsCarpentersBlock(CARPENTERS_BLOCK.get().getDefaultState(), AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
 
-    public static final RegistryObject<Block> CARPENTERS_SLABS_VERTICAL = BLOCKS.register("carpenters_slabs_vertical", () -> new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> CARPENTERS_SLABS_VERTICAL = BLOCKS.register("carpenters_slabs_vertical", () -> new VerticalSlabsCarpentersBlock(CARPENTERS_BLOCK.get()::getDefaultState, AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
 
     public static final RegistryObject<Block> CARPENTERS_DAYLIGHT_SENSOR = BLOCKS.register("carpenters_daylight_sensor", () -> new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
 
@@ -55,7 +55,7 @@ public class CarpentersBlocks {
 
     //public static final RegistryObject<Block> CARPENTERS_PRESSURE_PLATE = BLOCKS.register("carpenters_pressure_plate", () -> new PressurePlateCarpentersBlock(CARPENTERS_BLOCK.get().getDefaultState(), AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
 
-    public static final RegistryObject<Block> CARPENTERS_SCAFFOLDING = BLOCKS.register("carpenters_scaffolding", () -> new ScaffoldingCarpentersBlock(CARPENTERS_BLOCK.get().getDefaultState(), AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> CARPENTERS_SCAFFOLDING = BLOCKS.register("carpenters_scaffolding", () -> new ScaffoldingCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
 
     //public static final RegistryObject<Block> CARPENTERS_SLOPE = BLOCKS.register("carpenters_slope", () -> new SlopeCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
 

@@ -1,5 +1,34 @@
 {
   "variants": {
-    "": { "model": "carpentersblocksreborn:block/carpenters_slabs_vertical" }
+    "full=false,facing=north": {
+      "y": 90,
+      "model": "carpentersblocksreborn:block/carpenters_slabs_vertical_outer"
+    },
+    "full=false,facing=east": {
+      "y": 180,
+      "model": "carpentersblocksreborn:block/carpenters_slabs_vertical_outer"
+    },
+    "full=false,facing=south": {
+      "y": 270,
+      "model": "carpentersblocksreborn:block/carpenters_slabs_vertical_outer"
+    },
+    "full=false,facing=west": {
+      "model": "carpentersblocksreborn:block/carpenters_slabs_vertical_outer"
+    },
+    "full=true,facing=north": {
+      "y": 90,
+      "model": "carpentersblocksreborn:block/carpenters_block_solid"
+    },
+    "full=true,facing=east": {
+      "y": 180,
+      "model": "carpentersblocksreborn:block/carpenters_block_solid"
+    },
+    "full=true,facing=south": {
+      "y": 270,
+      "model": "carpentersblocksreborn:block/carpenters_block_solid"
+    },
+    "full=true,facing=west": {
+      "model": "carpentersblocksreborn:block/carpenters_block_solid"
+    }
   }
 }

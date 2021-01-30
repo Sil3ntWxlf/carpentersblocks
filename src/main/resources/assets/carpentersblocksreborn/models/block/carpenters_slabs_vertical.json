@@ -1,6 +1,8 @@
 {
-  "parent": "block/cube_all",
+  "parent": "minecraft:block/block",
   "textures": {
-    "all": "carpentersblocksreborn:block/carpenters_general/quartered_frame"
+    "top": "carpentersblocksreborn:block/carpenters_general/solid",
+    "bottom": "carpentersblocksreborn:block/carpenters_general/solid",
+    "side": "carpentersblocksreborn:block/carpenters_general/solid"
   }
 }
