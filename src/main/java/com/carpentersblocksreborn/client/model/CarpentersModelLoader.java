@@ -1,5 +1,6 @@
-package com.carpentersblocksreborn.client;
+package com.carpentersblocksreborn.client.model;
 
+import com.carpentersblocksreborn.client.UnbakedQuad;
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
@@ -21,7 +22,7 @@ public class CarpentersModelLoader implements IModelLoader<CarpentersUnbakedMode
 
     @Override
     public void onResourceManagerReload(IResourceManager resourceManager) {
-
+        // TODO determine if we should be putting stuff in here
     }
 
     @Override

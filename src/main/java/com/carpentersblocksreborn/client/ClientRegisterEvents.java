@@ -1,5 +1,6 @@
 package com.carpentersblocksreborn.client;
 
+import com.carpentersblocksreborn.client.model.CarpentersModelLoader;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoaderRegistry;
