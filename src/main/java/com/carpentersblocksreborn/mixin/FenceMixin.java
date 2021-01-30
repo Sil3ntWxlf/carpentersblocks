@@ -1,6 +1,6 @@
 package com.carpentersblocksreborn.mixin;
 
-import com.carpentersblocksreborn.block.BarrierCarpentersBlock;
+import com.carpentersblocksreborn.block.FenceCarpentersBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.FenceBlock;
 import net.minecraft.util.Direction;
@@ -14,7 +14,7 @@ public class FenceMixin {
 
     @Inject(at = @At("HEAD"), method = "canConnect(Lnet/minecraft/block/BlockState;ZLnet/minecraft/util/Direction;)Z", cancellable = true)
     public void canConnect(BlockState state, boolean isSideSolid, Direction direction, CallbackInfoReturnable<Boolean> info) {
-        if (state.getBlock() instanceof BarrierCarpentersBlock) {
+        if (state.getBlock() instanceof FenceCarpentersBlock) {
             info.setReturnValue(true);
         }
     }

@@ -19,15 +19,15 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.world.World;
 
-public class BarrierCarpentersBlock extends FenceBlock implements CarpentersBlock {
-    public BarrierCarpentersBlock(Properties properties) {
+public class FenceCarpentersBlock extends FenceBlock implements CarpentersBlock {
+    public FenceCarpentersBlock(Properties properties) {
         super(properties);
     }
 
     @Override
     public boolean canConnect(BlockState state, boolean isSideSolid, Direction direction) {
         Block block = state.getBlock();
-        if (block instanceof BarrierCarpentersBlock) {
+        if (block instanceof FenceCarpentersBlock) {
             return true;
         }
         boolean woodenFence = block.isIn(BlockTags.FENCES) && block.isIn(BlockTags.WOODEN_FENCES);
@@ -47,7 +47,7 @@ public class BarrierCarpentersBlock extends FenceBlock implements CarpentersBloc
         }
 
         CarpentersBlockEntity carpentersBlockEntity = (CarpentersBlockEntity) blockEntity;
-        if (carpentersBlockEntity.getState() != null && !carpentersBlockEntity.getState().toString().isEmpty()) {
+        if (carpentersBlockEntity.isMimicBlock()) {
             return super.onBlockActivated(state, world, pos, player, hand, hit);
         }
 
@@ -57,7 +57,7 @@ public class BarrierCarpentersBlock extends FenceBlock implements CarpentersBloc
         }
 
         BlockItem item = (BlockItem) heldItem;
-        carpentersBlockEntity.setState(item.getRegistryName());
+        carpentersBlockEntity.setMimicBlock(item.getBlock());
         player.playSound(SoundEvents.ENTITY_ITEM_FRAME_PLACE, 1f, 1f);
         player.getHeldItemMainhand().setCount(player.getHeldItemMainhand().getCount() - 1);
 
