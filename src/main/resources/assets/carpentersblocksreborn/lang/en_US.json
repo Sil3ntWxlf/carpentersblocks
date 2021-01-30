@@ -44,6 +44,9 @@
   "block.carpentersblocksreborn.carpenters_torch": "Carpenter's Torch",
   "block.carpentersblocksreborn.carpenters_wall": "Carpenter's Wall",
   "block.carpentersblocksreborn.carpenters_window": "Carpenter's Window",
+  "block.carpentersblocksreborn.inverted_planks": "Inverted Planks",
+  "block.carpentersblocksreborn.inverted_slabs": "Inverted Slabs",
+  "block.carpentersblocksreborn.inverted_stairs": "Inverted Stairs",
 
   "entity.carpentersblocksreborn.carpenters_barrier": "Carpenter's Barrier",
   "entity.carpentersblocksreborn.carpenters_bed": "Carpenter's Bed",
@@ -172,6 +175,9 @@
   "item.carpentersblocksreborn.carpenters_torch": "Carpenter's Torch",
   "item.carpentersblocksreborn.carpenters_wall": "Carpenter's Wall",
   "item.carpentersblocksreborn.carpenters_window": "Carpenter's Window",
+  "item.carpentersblocksreborn.inverted_planks": "Inverted Planks",
+  "item.carpentersblocksreborn.inverted_slabs": "Inverted Slabs",
+  "item.carpentersblocksreborn.inverted_stairs": "Inverted Stairs",
 
   "message.carpentersblocksreborn.activation_iron": "ACTIVATION: Will behave like an iron door",
   "message.carpentersblocksreborn.activation_wood": "ACTIVATION: Will behave like a wooden door",

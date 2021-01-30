@@ -19,7 +19,7 @@ public class CarpentersBlocks {
 
     public static final RegistryObject<Block> BAMBOO_SLABS = BLOCKS.register("bamboo_slabs", () -> new BambooSlabsBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
 
-    public static final RegistryObject<Block> BAMBOO_SLABS_VERTICAL = BLOCKS.register("bamboo_slabs_vertical", () -> new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> BAMBOO_SLABS_VERTICAL = BLOCKS.register("bamboo_slabs_vertical", () -> new VerticalSlabsBambooBlock(BAMBOO_PLANKS.get()::getDefaultState, AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
 
     public static final RegistryObject<Block> BAMBOO_STAIRS = BLOCKS.register("bamboo_stairs", () -> new BambooStairsBlock(BAMBOO_PLANKS.get()::getDefaultState, AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
 
@@ -33,7 +33,7 @@ public class CarpentersBlocks {
 
     public static final RegistryObject<Block> CARPENTERS_CARPET = BLOCKS.register("carpenters_carpet", () -> new CarpetCarpentersBlock(AbstractBlock.Properties.create(Material.WOOL).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
 
-    public static final RegistryObject<Block> CARPENTERS_SLABS = BLOCKS.register("carpenters_slabs", () -> new SlabsCarpentersBlock(CARPENTERS_BLOCK.get().getDefaultState(), AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> CARPENTERS_SLABS = BLOCKS.register("carpenters_slabs", () -> new SlabsCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
 
     public static final RegistryObject<Block> CARPENTERS_SLABS_VERTICAL = BLOCKS.register("carpenters_slabs_vertical", () -> new VerticalSlabsCarpentersBlock(CARPENTERS_BLOCK.get()::getDefaultState, AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
 
@@ -53,19 +53,19 @@ public class CarpentersBlocks {
 
     public static final RegistryObject<Block> CARPENTERS_LEVER = BLOCKS.register("carpenters_lever", () -> new LeverCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
 
-    //public static final RegistryObject<Block> CARPENTERS_PRESSURE_PLATE = BLOCKS.register("carpenters_pressure_plate", () -> new PressurePlateCarpentersBlock(CARPENTERS_BLOCK.get().getDefaultState(), AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
+    //public static final RegistryObject<Block> CARPENTERS_PRESSURE_PLATE = BLOCKS.register("carpenters_pressure_plate", () -> new PressurePlateCarpentersBlock(CARPENTERS_BLOCK.get().getDefaultState(), AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD), sensitivity));
 
     public static final RegistryObject<Block> CARPENTERS_SCAFFOLDING = BLOCKS.register("carpenters_scaffolding", () -> new ScaffoldingCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
 
     //public static final RegistryObject<Block> CARPENTERS_SLOPE = BLOCKS.register("carpenters_slope", () -> new SlopeCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
 
-    public static final RegistryObject<Block> CARPENTERS_SLOPE_OBLIQUE_INTERIOR = BLOCKS.register("carpenters_slope_oblique_interior", () -> new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
+    //public static final RegistryObject<Block> CARPENTERS_SLOPE_OBLIQUE_INTERIOR = BLOCKS.register("carpenters_slope_oblique_interior", () -> new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
 
-    public static final RegistryObject<Block> CARPENTERS_SLOPE_PRISM = BLOCKS.register("carpenters_slope_prism", () -> new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
+    //public static final RegistryObject<Block> CARPENTERS_SLOPE_PRISM = BLOCKS.register("carpenters_slope_prism", () -> new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
 
-    public static final RegistryObject<Block> CARPENTERS_SLOPE_WEDGE = BLOCKS.register("carpenters_slope_wedge", () -> new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
+    //public static final RegistryObject<Block> CARPENTERS_SLOPE_WEDGE = BLOCKS.register("carpenters_slope_wedge", () -> new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
 
-    public static final RegistryObject<Block> CARPENTERS_SLOPE_WEDGE_PRISM = BLOCKS.register("carpenters_slope_wedge_prism", () -> new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
+    //public static final RegistryObject<Block> CARPENTERS_SLOPE_WEDGE_PRISM = BLOCKS.register("carpenters_slope_wedge_prism", () -> new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
 
     public static final RegistryObject<Block> CARPENTERS_SAFE = BLOCKS.register("carpenters_safe", () -> new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
 
@@ -78,4 +78,10 @@ public class CarpentersBlocks {
     public static final RegistryObject<Block> CARPENTERS_WALL = BLOCKS.register("carpenters_wall", () -> new WallCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
 
     public static final RegistryObject<Block> CARPENTERS_WINDOW = BLOCKS.register("carpenters_window", () -> new WaterloggableCarpentersBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
+
+    public static final RegistryObject<Block> INVERTED_PLANKS = BLOCKS.register("inverted_planks", () -> new Block(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
+
+    public static final RegistryObject<Block> INVERTED_SLABS = BLOCKS.register("inverted_slabs", () -> new InvertedSlabsBlock(AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
+
+    public static final RegistryObject<Block> INVERTED_STAIRS = BLOCKS.register("inverted_stairs", () -> new InvertedStairsBlock(INVERTED_PLANKS.get()::getDefaultState, AbstractBlock.Properties.create(Material.WOOD).harvestLevel(1).harvestTool(ToolType.AXE).hardnessAndResistance(1).sound(SoundType.WOOD)));
 }
