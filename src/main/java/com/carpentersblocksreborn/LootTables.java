@@ -21,7 +21,6 @@ class LootTables extends LootTableProvider {
     @Override
     protected List<Pair<Supplier<Consumer<BiConsumer<ResourceLocation, LootTable.Builder>>>, LootParameterSet>> getTables() {
         ImmutableList.Builder<Pair<Supplier<Consumer<BiConsumer<ResourceLocation, LootTable.Builder>>>, LootParameterSet>> lootTables = ImmutableList.builder();
-        lootTables.add();
         return lootTables.build();
     }
 }

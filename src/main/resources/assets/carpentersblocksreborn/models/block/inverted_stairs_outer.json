@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "carpentersblocksreborn:block/carpenters_general/inverted_planks",
+    "top": "carpentersblocksreborn:block/carpenters_general/inverted_planks",
+    "side": "carpentersblocksreborn:block/carpenters_general/inverted_planks"
+  }
+}

@@ -119,9 +119,9 @@ repositories {
     }
 
 dependencies {
-        minecraft 'net.minecraftforge:forge:1.16.4-35.1.36'
+        minecraft 'net.minecraftforge:forge:1.16.5-36.0.13'
 
-        implementation fg.deobf('software.bernie.geckolib:forge-1.16.4-geckolib:3.0.0')
+        implementation fg.deobf('software.bernie.geckolib:geckolib-forge-1.16.5:3.0.8')
 
         // compile against the JEI API but do not include it at runtime
         compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api")

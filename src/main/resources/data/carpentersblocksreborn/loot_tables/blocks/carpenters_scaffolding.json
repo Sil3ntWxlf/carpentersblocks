@@ -1,0 +1,20 @@
+{
+  "type": "block",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "carpentersblocksreborn:carpenters_scaffolding"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ]
+    }
+  ]
+}

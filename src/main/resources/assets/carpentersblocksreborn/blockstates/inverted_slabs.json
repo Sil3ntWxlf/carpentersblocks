@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "carpentersblocksreborn:block/inverted_slabs"
+    },
+    "type=double": {
+      "model": "carpentersblocksreborn:block/inverted_planks"
+    },
+    "type=top": {
+      "model": "carpentersblocksreborn:block/inverted_slabs_top"
+    }
+  }
+}
