@@ -35,7 +35,7 @@ apply plugin: 'maven-publish'
 version = (hasProperty("CIRevision") ? CIRevision : config.mod_version)
 group = config.group_name
 archivesBaseName = "${config.mod_id}-${config.minecraft_version}"
-sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
+sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '15' // Need this here so eclipse task generates correctly.
 
 println('Java: ' + System.getProperty('java.version') + ' JVM: ' + System.getProperty('java.vm.version') + '(' + System.getProperty('java.vendor') + ') Arch: ' + System.getProperty('os.arch'))
 minecraft {
@@ -113,7 +113,7 @@ jar {
 }
 
 repositories {
-        maven { url 'https://repo.repsy.io/mvn/gandiber/geckolib' }
+        //maven { url 'https://repo.repsy.io/mvn/gandiber/geckolib' }
         maven { url 'https://dvs1.progwml6.com/files/maven/' }
         maven { url 'https://modmaven.k-4u.nl' }
     }
@@ -121,7 +121,7 @@ repositories {
 dependencies {
         minecraft 'net.minecraftforge:forge:1.16.5-36.0.13'
 
-        implementation fg.deobf('software.bernie.geckolib:geckolib-forge-1.16.5:3.0.8')
+        //implementation fg.deobf('software.bernie.geckolib:geckolib-forge-1.16.5:3.0.8')
 
         // compile against the JEI API but do not include it at runtime
         compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api")

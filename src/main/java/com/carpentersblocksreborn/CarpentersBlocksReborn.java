@@ -15,7 +15,7 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import software.bernie.geckolib3.GeckoLib;
+//import software.bernie.geckolib3.GeckoLib;
 
 import java.util.Objects;
 
@@ -36,7 +36,7 @@ public class CarpentersBlocksReborn {
             // RenderTypeLookup.setRenderLayer(CarpentersBlocks.CARPENTERS_WALL_TORCH.get(), RenderType.getCutout());
         });
 
-        GeckoLib.initialize();
+        //GeckoLib.initialize();
     }
 
     @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
