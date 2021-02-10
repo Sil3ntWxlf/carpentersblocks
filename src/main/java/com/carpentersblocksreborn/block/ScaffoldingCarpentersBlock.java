@@ -1,12 +1,15 @@
 package com.carpentersblocksreborn.block;
 
 import com.carpentersblocksreborn.init.CarpentersBlocks;
+import com.carpentersblocksreborn.init.CarpentersItemGroups;
+import com.carpentersblocksreborn.item.ScaffoldingCarpentersItem;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ScaffoldingBlock;
 import net.minecraft.entity.item.FallingBlockEntity;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.BlockItemUseContext;
+import net.minecraft.item.Item;
 import net.minecraft.state.StateContainer;
 import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
@@ -17,7 +20,7 @@ import net.minecraft.world.server.ServerWorld;
 
 import java.util.Random;
 
-public class ScaffoldingCarpentersBlock extends ScaffoldingBlock {
+public class ScaffoldingCarpentersBlock extends ScaffoldingBlock implements CarpentersBlock {
     public ScaffoldingCarpentersBlock(Properties properties) {
         super(properties);
     }
@@ -83,5 +86,10 @@ public class ScaffoldingCarpentersBlock extends ScaffoldingBlock {
         }
 
         return i;
+    }
+
+    @Override
+    public Item getItem() {
+        return new ScaffoldingCarpentersItem(this, new Item.Properties().group(CarpentersItemGroups.CARPENTERS_BLOCKS));
     }
 }

@@ -1,5 +1,6 @@
 package com.carpentersblocksreborn;
 
+import com.carpentersblocksreborn.block.CarpentersBlock;
 import com.carpentersblocksreborn.init.CarpentersBlockEntityTypes;
 import com.carpentersblocksreborn.init.CarpentersItemGroups;
 import com.carpentersblocksreborn.init.CarpentersBlocks;
@@ -33,7 +34,7 @@ public class CarpentersBlocksReborn {
 
         FMLJavaModLoadingContext.get().getModEventBus().addListener((FMLClientSetupEvent event) -> {
             RenderTypeLookup.setRenderLayer(CarpentersBlocks.CARPENTERS_TORCH.get(), RenderType.getCutout());
-            // RenderTypeLookup.setRenderLayer(CarpentersBlocks.CARPENTERS_WALL_TORCH.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(CarpentersBlocks.CARPENTERS_BLOCK.get(), RenderType.getTranslucent());
         });
 
         //GeckoLib.initialize();
@@ -48,10 +49,15 @@ public class CarpentersBlocksReborn {
                     .map(RegistryObject::get)
                     .forEach(block -> {
                         Item.Properties properties = new Item.Properties().group(CarpentersItemGroups.CARPENTERS_BLOCKS);
-                        BlockItem blockItem = new BlockItem(block, properties);
-
-                        blockItem.setRegistryName(Objects.requireNonNull(block.getRegistryName()));
-                        itemRegistryEvent.getRegistry().register(blockItem);
+                        Item item = null;
+                        if (block instanceof CarpentersBlock) {
+                            item = ((CarpentersBlock) block).getItem();
+                        }
+                        if (item == null) {
+                            item = new BlockItem(block, properties);
+                        }
+                        item.setRegistryName(Objects.requireNonNull(block.getRegistryName()));
+                        itemRegistryEvent.getRegistry().register(item);
                     });
         }
     }

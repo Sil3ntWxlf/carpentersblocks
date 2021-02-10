@@ -1,5 +1,5 @@
 {
-    "parent": "carpentersblocksreborn:block/bamboo_slabs_vertical",
+    "parent": "carpentersblocksreborn:block/bamboo_slabs_vertical_outer",
     "display": {
         "thirdperson": {
             "rotation": [ 10, -45, 170],

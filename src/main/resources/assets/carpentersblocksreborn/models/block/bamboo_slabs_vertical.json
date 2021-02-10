@@ -1,5 +1,5 @@
 {
-    "parent": "minecraft:block/block",
+    "parent": "block/block",
     "textures": {
         "top": "carpentersblocksreborn:block/carpenters_general/bamboo_planks",
         "bottom": "carpentersblocksreborn:block/carpenters_general/bamboo_planks",

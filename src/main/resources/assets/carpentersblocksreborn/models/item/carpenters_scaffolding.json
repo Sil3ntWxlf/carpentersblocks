@@ -1,5 +1,5 @@
 {
-    "parent": "carpentersblocksreborn:block/carpenters_scaffolding",
+    "parent": "carpentersblocksreborn:block/carpenters_scaffolding_stable",
     "display": {
         "thirdperson": {
             "rotation": [ 10, -45, 170],
