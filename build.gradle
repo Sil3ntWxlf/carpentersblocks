@@ -17,14 +17,12 @@ buildscript {
     }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '3.+', changing: true
-        classpath group: 'org.spongepowered', name: 'mixingradle', version: '0.7-SNAPSHOT'
     }
 }
 
 apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'net.minecraftforge.gradle'
-apply plugin: 'org.spongepowered.mixin'
 // Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
@@ -127,9 +125,4 @@ dependencies {
         compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api")
         // at runtime, use the full JEI jar
         runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}")
-
-}
-
-mixin {
-    add sourceSets.main, "carpentersblocksreborn.refmap.json"
 }
