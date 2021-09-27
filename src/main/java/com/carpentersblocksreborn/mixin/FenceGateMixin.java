@@ -10,8 +10,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(FenceGateBlock.class)
 public class FenceGateMixin {
-
-    @Inject(at = @At("HEAD"), method = "isWall(Lnet/minecraft/block/BlockState;)Z", cancellable = true)
+    //@Inject(at = @At("HEAD"), method = "isWall(Lnet/minecraft/block/BlockState;)Z", cancellable = true)
     private void isWall(BlockState state, CallbackInfoReturnable<Boolean> info) {
         if (state.getBlock() instanceof WallCarpentersBlock) {
             info.setReturnValue(true);

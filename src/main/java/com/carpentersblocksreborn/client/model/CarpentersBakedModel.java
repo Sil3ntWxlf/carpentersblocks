@@ -23,17 +23,18 @@ import java.util.Random;
 
 public class CarpentersBakedModel implements IDynamicBakedModel {
     private static final ModelProperty<TextureAtlasSprite> TEXTURE_PROPERTY = new ModelProperty<>();
-    private final List<BakedQuad> quads;
+    private final ImmutableList<BakedQuad> quads;
+    private final TextureAtlasSprite particle;
 
-    public CarpentersBakedModel(List<BakedQuad> quads) {
+    public CarpentersBakedModel(ImmutableList<BakedQuad> quads, TextureAtlasSprite particle) {
         this.quads = quads;
+        this.particle = particle;
     }
 
     @Nonnull
     @Override
     public List<BakedQuad> getQuads(@Nullable BlockState state, @Nullable Direction side, @Nonnull Random rand, @Nonnull IModelData extraData) {
-
-        return ImmutableList.of();
+        return this.quads;
     }
 
     @Override
@@ -58,7 +59,7 @@ public class CarpentersBakedModel implements IDynamicBakedModel {
 
     @Override
     public TextureAtlasSprite getParticleTexture() {
-        return null;
+        return particle;
     }
 
     @Override

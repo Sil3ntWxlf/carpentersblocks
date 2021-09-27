@@ -1,6 +1,7 @@
 package com.carpentersblocksreborn;
 
 import com.carpentersblocksreborn.block.CarpentersBlock;
+import com.carpentersblocksreborn.client.model.CarpentersModelLoader;
 import com.carpentersblocksreborn.init.CarpentersBlockEntityTypes;
 import com.carpentersblocksreborn.init.CarpentersItemGroups;
 import com.carpentersblocksreborn.init.CarpentersBlocks;
@@ -9,6 +10,9 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.client.event.ModelRegistryEvent;
+import net.minecraftforge.client.model.ModelLoaderRegistry;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -22,6 +26,7 @@ import java.util.Objects;
 
 @Mod(CarpentersBlocksReborn.MOD_ID)
 public class CarpentersBlocksReborn {
+    // TODO change to `carpentersblocks` when if we write model generation export
     public static final String MOD_ID = "carpentersblocksreborn";
 
     public CarpentersBlocksReborn() {
@@ -35,6 +40,12 @@ public class CarpentersBlocksReborn {
         FMLJavaModLoadingContext.get().getModEventBus().addListener((FMLClientSetupEvent event) -> {
             RenderTypeLookup.setRenderLayer(CarpentersBlocks.CARPENTERS_TORCH.get(), RenderType.getCutout());
             RenderTypeLookup.setRenderLayer(CarpentersBlocks.CARPENTERS_BLOCK.get(), RenderType.getTranslucent());
+        });
+
+        FMLJavaModLoadingContext.get().getModEventBus().addListener((ModelRegistryEvent event) -> {
+            ModelLoaderRegistry.registerLoader(new ResourceLocation(CarpentersBlocksReborn.MOD_ID, "vertices"), CarpentersModelLoader.INSTANCE);
+
+            System.out.println("Loaded custom model loader");
         });
 
         //GeckoLib.initialize();

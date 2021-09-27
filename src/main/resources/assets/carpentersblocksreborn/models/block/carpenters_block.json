@@ -1,6 +1,7 @@
 {
-    "parent": "block/cube_all",
+    "loader": "carpentersblocksreborn:vertices",
     "textures": {
         "all": "carpentersblocksreborn:block/carpenters_general/quartered_frame"
-    }
+    },
+    "quads": []
 }

@@ -4,10 +4,6 @@
   "compatibilityLevel": "JAVA_11",
   "refmap": "carpentersblocksreborn.refmap.json",
   "mixins": [
-    "FenceMixin",
-    "FenceGateMixin",
-    "WallBlockAccessor",
-    "WallBlockMixin"
   ],
   "minVersion": "0.8.2"
 }

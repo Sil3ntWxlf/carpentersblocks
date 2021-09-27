@@ -4,24 +4,39 @@ import com.carpentersblocksreborn.util.Codecs;
 import com.google.common.collect.ImmutableList;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.client.renderer.model.BakedQuad;
+import net.minecraft.client.renderer.FaceDirection;
+import net.minecraft.client.renderer.model.*;
+import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
+import net.minecraft.inventory.container.PlayerContainer;
+import net.minecraft.util.Direction;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.math.MathHelper;
+import net.minecraft.util.math.vector.TransformationMatrix;
 import net.minecraft.util.math.vector.Vector2f;
 import net.minecraft.util.math.vector.Vector3f;
 
+import javax.annotation.Nullable;
+import java.util.Optional;
+import java.util.function.Function;
+
 public class UnbakedQuad {
     public static final Codec<UnbakedQuad> CODEC = RecordCodecBuilder.create(instance -> instance.group(
+            ResourceLocation.CODEC.optionalFieldOf("texture").forGetter(quad -> quad.textureLocation),
             Codecs.VEC3.fieldOf("normal").forGetter(quad -> quad.normal),
             Vertex.CODEC.listOf().fieldOf("vertices").forGetter(quad -> ImmutableList.of(quad.vertex0, quad.vertex1, quad.vertex2, quad.vertex3))
             /* FIXME Is there a better way of boxing the vertices into a DataResult so
                 if a crash occurs it'd be easier to identify with a logged output with a DataResult.error?
                 We have to assume the list would be of 4 otherwise. */
-    ).apply(instance, (normal, vertices) -> new UnbakedQuad(normal, vertices.get(0), vertices.get(1), vertices.get(2), vertices.get(3))));
+    ).apply(instance, (texture, normal, vertices) -> new UnbakedQuad(texture, normal, vertices.get(0), vertices.get(1), vertices.get(2), vertices.get(3))));
 
+    private final Optional<ResourceLocation> textureLocation;
     private final Vector3f normal;
     private final Vertex vertex0, vertex1, vertex2, vertex3;
 
-    public UnbakedQuad(Vector3f normal, Vertex vertex0, Vertex vertex1, Vertex vertex2, Vertex vertex3) {
+    public UnbakedQuad(Optional<ResourceLocation> textureLocation, Vector3f normal, Vertex vertex0, Vertex vertex1, Vertex vertex2, Vertex vertex3) {
+        this.textureLocation = textureLocation;
+
         this.normal = normal;
 
         this.vertex0 = vertex0;
@@ -36,7 +51,7 @@ public class UnbakedQuad {
         vertexData[offset + 1] = Float.floatToRawIntBits(pos.getY());
         vertexData[offset + 2] = Float.floatToRawIntBits(pos.getZ());
 
-        // Tint
+        // Tint - Mojang uses -1 literally in the source
         vertexData[offset + 3] = -1;
 
         // UV
@@ -47,7 +62,7 @@ public class UnbakedQuad {
         // vertexData[vert + 6] = 0;
     }
 
-    public BakedQuad bake() {
+    public BakedQuad bake(Function<RenderMaterial, TextureAtlasSprite> spriteGetter) {
         int[] vertexData = new int[DefaultVertexFormats.BLOCK.getIntegerSize() * 4];
 
         populateVertexData(vertexData, vertex0.position, 0);
@@ -55,7 +70,7 @@ public class UnbakedQuad {
         populateVertexData(vertexData, vertex2.position, 16);
         populateVertexData(vertexData, vertex3.position, 24);
 
-        // Normals - DO NOT RESORT THESE!
+        // Normals - DO NOT RE-SORT THESE!
         Vector3f v1 = vertex3.position;
         Vector3f t1 = vertex1.position;
         Vector3f v2 = vertex2.position;
@@ -76,9 +91,8 @@ public class UnbakedQuad {
             vertexData[i * 8 + 7] = normal;
         }
 
-        BakedQuad quad = null;//new BakedQuad();
-
-        return quad;
+        // DiffuseLighting is if we want to do the side-shading that exists normally on blocks
+        return new BakedQuad(vertexData, -1, FaceBakery.getFacingFromVertexData(vertexData), spriteGetter.apply(new RenderMaterial(PlayerContainer.LOCATION_BLOCKS_TEXTURE, textureLocation.get())), false);
     }
 
     public static class Vertex {
