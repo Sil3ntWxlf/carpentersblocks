@@ -2,6 +2,6 @@
     "pack": {
         "description": "This mod adds slopes and a custom variety of vanilla-inspired blocks to Minecraft. The custom nature of these blocks allows players to cover them using most solid blocks in the game. Once covered, they look and act just like the block they're mimicking, but in entirely new shapes! For example, make some obsidian stairs that are resistant to explosions; or, make glowstone take the shape of a pyramid top. With Carpenter's Blocks, building takes on new possibilities!",
         "pack_format": 6,
-        "_comment": "A pack_format of 6 requires json lang files and some texture changes from 1.16.4. Note: we require v6 pack meta for all mods."
+        "_comment": "A pack_format of 6 requires json lang files and some texture changes from 1.16.5. Note: we require v6 pack meta for all mods."
     }
 }

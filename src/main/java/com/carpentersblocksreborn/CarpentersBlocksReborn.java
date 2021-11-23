@@ -47,8 +47,6 @@ public class CarpentersBlocksReborn {
 
             System.out.println("Loaded custom model loader");
         });
-
-        //GeckoLib.initialize();
     }
 
     @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)

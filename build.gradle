@@ -16,7 +16,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '3.+', changing: true
+        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '7.+', changing: true
     }
 }
 
@@ -33,7 +33,7 @@ apply plugin: 'maven-publish'
 version = (hasProperty("CIRevision") ? CIRevision : config.mod_version)
 group = config.group_name
 archivesBaseName = "${config.mod_id}-${config.minecraft_version}"
-sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '11' // Need this here so eclipse task generates correctly.
+sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '17' // Need this here so eclipse task generates correctly.
 
 println('Java: ' + System.getProperty('java.version') + ' JVM: ' + System.getProperty('java.vm.version') + '(' + System.getProperty('java.vendor') + ') Arch: ' + System.getProperty('os.arch'))
 minecraft {
@@ -90,10 +90,6 @@ minecraft {
                     source sourceSets.main
                 }
             }
-            args '--mod', 'carpentersblocksreborn', '--all',
-                    '--existing', '"' + file('src/main/resources/') + '"',
-                    '--existing', '"' + file('src/generated/resources/') + '"',
-                    '--output', '"' + file('src/generated/resources/') + '"'
         }
     }
 }
@@ -117,9 +113,7 @@ repositories {
     }
 
 dependencies {
-        minecraft 'net.minecraftforge:forge:1.16.5-36.0.13'
-
-        //implementation fg.deobf('software.bernie.geckolib:geckolib-forge-1.16.5:3.0.8')
+        minecraft 'net.minecraftforge:forge:1.17.1 - 37.0.112'
 
         // compile against the JEI API but do not include it at runtime
         compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api")

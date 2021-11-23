@@ -1,9 +1,9 @@
 {
   "required": true,
   "package": "com.carpentersblocksreborn.mixin",
-  "compatibilityLevel": "JAVA_11",
+  "compatibilityLevel": "JAVA_17",
   "refmap": "carpentersblocksreborn.refmap.json",
   "mixins": [
   ],
-  "minVersion": "0.8.2"
+  "minVersion": "0.8.4"
 }
